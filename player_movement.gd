@@ -6,6 +6,8 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 const MAX_DROP_VELOCITY = 1200.0
 
+var gems = 0;
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -33,3 +35,18 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+
+func _on_door_body_entered(body: Node2D) -> void:
+	if gems >= 1:
+		print("Door entered")
+	else:
+		print("Not enough gems")
+	pass # Replace with function body.
+
+
+func _on_gem_body_entered(body: Node2D) -> void:
+	gems += 1
+	print("Gem obtained")
+	body.queue_free()
+	pass # Replace with function body.

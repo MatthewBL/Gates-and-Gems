@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://dsm8ehntyf1cy"]
+
+[ext_resource type="Script" uid="uid://di8sfxrlb1mwh" path="res://scenes/levels/level_manager.gd" id="1_jp5fc"]
+[ext_resource type="PackedScene" uid="uid://v40swcvc25lm" path="res://scenes/player.tscn" id="2_4ptlp"]
+[ext_resource type="PackedScene" uid="uid://dhfdam3l31jfu" path="res://scenes/movement_test.tscn" id="3_ycf23"]
+[ext_resource type="Texture2D" uid="uid://bbc2ec3j6wxfx" path="res://icon.svg" id="4_4ptlp"]
+[ext_resource type="Script" uid="uid://e4xt6ietkd6" path="res://scenes/gem.gd" id="5_ycf23"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s6nli"]
+size = Vector2(125.00391, 125.001465)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_twkdg"]
+size = Vector2(125.00342, 127.778564)
+
+[node name="LevelTest" type="Node2D" unique_id=1405935450 node_paths=PackedStringArray("level", "player")]
+script = ExtResource("1_jp5fc")
+level = NodePath("Node2D")
+player = NodePath("CharacterBody2D")
+
+[node name="CharacterBody2D" parent="." unique_id=879361713 instance=ExtResource("2_4ptlp")]
+position = Vector2(520, 543)
+
+[node name="Node2D" parent="." unique_id=787758616 instance=ExtResource("3_ycf23")]
+
+[node name="Door" type="Area2D" parent="." unique_id=1166346800]
+position = Vector2(787, 546)
+scale = Vector2(0.31999025, 0.47999513)
+
+[node name="Sprite2D" type="Sprite2D" parent="Door" unique_id=1441814703]
+texture = ExtResource("4_4ptlp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door" unique_id=323767299]
+shape = SubResource("RectangleShape2D_s6nli")
+
+[node name="Gem" type="Area2D" parent="." unique_id=482345951]
+position = Vector2(536.00006, 400)
+scale = Vector2(0.31999025, 0.35999757)
+script = ExtResource("5_ycf23")
+
+[node name="Sprite2D" type="Sprite2D" parent="Gem" unique_id=29435889]
+texture = ExtResource("4_4ptlp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gem" unique_id=308831320]
+scale = Vector2(0.99999994, 1)
+shape = SubResource("RectangleShape2D_twkdg")
+
+[connection signal="body_entered" from="Door" to="CharacterBody2D" method="_on_door_body_entered"]
+[connection signal="body_entered" from="Gem" to="Gem" method="_on_body_entered"]
