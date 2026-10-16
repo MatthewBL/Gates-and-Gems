@@ -3,7 +3,7 @@ extends Node2D
 
 
 @export var level: Level
-@export var player: Node2D
+@export var player: PlayerMovement
 
 
 func _ready() -> void:
