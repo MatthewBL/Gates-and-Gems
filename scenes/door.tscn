@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://n6hawyn447py"]
+
+[ext_resource type="Texture2D" uid="uid://bbc2ec3j6wxfx" path="res://icon.svg" id="2_83dcw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s6nli"]
+size = Vector2(125.00391, 125.001465)
+
+[node name="Door" type="Area2D" unique_id=1757254397]
+scale = Vector2(0.31999025, 0.47999513)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=887197391]
+texture = ExtResource("2_83dcw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=259710735]
+shape = SubResource("RectangleShape2D_s6nli")
