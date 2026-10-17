@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://neebscis582s" path="res://Assets/UI/e.png" id="4_dqkch"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twkdg"]
-size = Vector2(16, 16)
+size = Vector2(13, 14)
 
 [sub_resource type="Animation" id="Animation_qhqgy"]
 length = 0.001
@@ -51,6 +51,7 @@ size = Vector2(10, 9)
 size = Vector2(24, 24)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=879361713 node_paths=PackedStringArray("how_to_press_e")]
+z_index = 1
 script = ExtResource("1_g2els")
 how_to_press_e = NodePath("HowToPressE")
 
