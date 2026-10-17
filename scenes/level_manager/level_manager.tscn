@@ -5,11 +5,12 @@
 [ext_resource type="PackedScene" uid="uid://v40swcvc25lm" path="res://scenes/player.tscn" id="2_s5yp0"]
 [ext_resource type="PackedScene" uid="uid://dquvxukpdhikm" path="res://scenes/levels/level_2.tscn" id="3_edw4w"]
 [ext_resource type="PackedScene" uid="uid://dgwfxno32tioc" path="res://scenes/fade_in_out.tscn" id="3_oxi2h"]
+[ext_resource type="PackedScene" uid="uid://c36nhsxag4dmi" path="res://scenes/levels/level_3.tscn" id="4_fly33"]
 [ext_resource type="PackedScene" uid="uid://btdsf8n7usyx0" path="res://scenes/pause_menu.tscn" id="4_ikvo2"]
 
 [node name="LevelManager" type="Node2D" unique_id=1405935450 node_paths=PackedStringArray("player")]
 script = ExtResource("1_1hfdo")
-levels = Array[PackedScene]([ExtResource("2_ikvo2"), ExtResource("3_edw4w")])
+levels = Array[PackedScene]([ExtResource("2_ikvo2"), ExtResource("3_edw4w"), ExtResource("4_fly33")])
 player = NodePath("CharacterBody2D")
 
 [node name="CharacterBody2D" parent="." unique_id=879361713 instance=ExtResource("2_s5yp0")]
