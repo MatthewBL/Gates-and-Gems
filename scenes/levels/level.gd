@@ -20,8 +20,12 @@ var gem_count: int
 @onready var gem_container: Node2D = %GemContainer
 @onready var door: Door = %Door
 @onready var player_spawnpoint: Marker2D = %PlayerSpawnpoint
+@onready var collect_gem_sfx: AudioStreamPlayer = %CollectGemSFX
+@onready var open_door_sfx: AudioStreamPlayer = %OpenDoorSFX
+
 
 var doors
+
 
 func _ready() -> void:
 	door.player_interacted.connect(on_player_interacted_door)
@@ -34,10 +38,12 @@ func _ready() -> void:
 func update_gem_count(gem: Gem):
 	gem_collected.emit(gem)
 	gem_count -= 1
+	collect_gem_sfx.play()
 	if gem_count <= 0:
 		doors = get_tree().get_nodes_in_group("Door")
 		for door_instance in doors:
 			door_instance.open_door()
+			open_door_sfx.play()
 
 
 func on_player_interacted_door() -> void:

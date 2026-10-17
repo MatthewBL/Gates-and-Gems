@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://fv7lrurbfk00" path="res://scenes/levels/level.gd" id="1_km6db"]
 [ext_resource type="Texture2D" uid="uid://b6aepfjduqhtx" path="res://Assets/Escenario/Tileset/tiles paredes.png" id="2_cmhs5"]
 [ext_resource type="PackedScene" uid="uid://n6hawyn447py" path="res://scenes/door.tscn" id="3_r68ba"]
+[ext_resource type="AudioStream" uid="uid://c4aicdnxey23i" path="res://audio/collect_gem.ogg" id="4_kuyue"]
+[ext_resource type="AudioStream" uid="uid://c21egugb2hj4b" path="res://audio/open_door.ogg" id="5_7fkf7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cmhs5"]
 texture = ExtResource("2_cmhs5")
@@ -70,3 +72,11 @@ position = Vector2(660, 288)
 unique_name_in_owner = true
 position = Vector2(167, 262)
 gizmo_extents = 16.0
+
+[node name="CollectGemSFX" type="AudioStreamPlayer" parent="." unique_id=145257703]
+unique_name_in_owner = true
+stream = ExtResource("4_kuyue")
+
+[node name="OpenDoorSFX" type="AudioStreamPlayer" parent="." unique_id=1945544230]
+unique_name_in_owner = true
+stream = ExtResource("5_7fkf7")
