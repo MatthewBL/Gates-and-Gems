@@ -13,4 +13,4 @@ tile_map_data = PackedByteArray("AAAAAAAAAQABAAEAAAAAAAEAAQABAAEAAAAAAAIAAQABAAE
 position = Vector2(380.99997, 258)
 
 [node name="Door" parent="." index="2" unique_id=1757254397]
-position = Vector2(572.00006, 261)
+position = Vector2(572, 288)
