@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://d3f8h1qb6s1u3" path="res://scenes/door.gd" id="1_uvdjg"]
 [ext_resource type="Texture2D" uid="uid://fbmfr6jlw4nl" path="res://Assets/Escenario/Elementos/puertas.png" id="2_uvdjg"]
+[ext_resource type="Texture2D" uid="uid://c3slhtlhg5xkc" path="res://Assets/Escenario/Elementos/puerta_outline.png" id="3_83dcw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s6nli"]
 size = Vector2(52, 61)
@@ -22,3 +23,10 @@ region_rect = Rect2(1, 1, 52, 61)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=259710735]
 position = Vector2(26, -30.5)
 shape = SubResource("RectangleShape2D_s6nli")
+
+[node name="OutlineSprite2D" type="Sprite2D" parent="." unique_id=1909979155]
+unique_name_in_owner = true
+visible = false
+z_index = -5
+position = Vector2(25, -30)
+texture = ExtResource("3_83dcw")
