@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://c36nhsxag4dmi" path="res://scenes/levels/level_3.tscn" id="4_fly33"]
 [ext_resource type="PackedScene" uid="uid://btdsf8n7usyx0" path="res://scenes/pause_menu.tscn" id="4_ikvo2"]
 [ext_resource type="PackedScene" uid="uid://bybqn33h0qsm6" path="res://scenes/levels/level_4.tscn" id="5_cc64i"]
+[ext_resource type="AudioStream" uid="uid://chlijg0ncq82b" path="res://audio/prepare_your_swords.mp3" id="11_7xgxe"]
 
 [node name="LevelManager" type="Node2D" unique_id=1405935450 node_paths=PackedStringArray("player", "fade_in_out")]
 script = ExtResource("1_1hfdo")
@@ -28,3 +29,7 @@ process_mode = 3
 visible = false
 
 [node name="FadeInOut" parent="." unique_id=1018078760 instance=ExtResource("3_oxi2h")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=17347778]
+stream = ExtResource("11_7xgxe")
+autoplay = true
