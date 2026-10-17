@@ -4,6 +4,8 @@ extends Node2D
 
 @export var level: Level
 @export var player: PlayerMovement
+@export var fade_in_out: FadeInOut
+@export var gem_count: int
 
 
 func _ready() -> void:
@@ -34,3 +36,10 @@ func _physics_process(_delta: float) -> void:
 		player.global_position.y -= level.height
 	elif player.global_position.y < 0:
 		player.global_position.y += level.height
+
+func free_gem(target_gem: Gem) -> void:
+	var gems = get_tree().get_nodes_in_group("Gem")
+	var id = target_gem.id
+	for gem in gems:
+		if gem.id == id:
+			gem.queue_free()

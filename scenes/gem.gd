@@ -1,4 +1,8 @@
+class_name Gem
 extends Area2D
+
+@export var id: StringName
+@export var level_manager: LevelManager
 
 
 # Called when the node enters the scene tree for the first time.
@@ -15,5 +19,5 @@ func _on_body_entered(body: Node2D) -> void:
 	if body is PlayerMovement:
 		body.gems += 1
 		print("Gem obtained")
-		queue_free()
+		level_manager.free_gem(self)
 	pass # Replace with function body.
