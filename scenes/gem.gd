@@ -25,12 +25,11 @@ func destroy() -> void:
 	collision_layer = 0
 	collision_mask = 0
 	var tween: Tween =  create_tween()
-	tween.tween_property(sprite_2d, "global_scale", Vector2(0.01, 0.01), 0.2) 
+	tween.tween_property(sprite_2d, "global_scale", Vector2(0.01, 0.01), 0.1) 
 	tween.parallel()
-	tween.tween_property(idle_particles_2d, "global_scale", Vector2(0.01, 0.01), 0.2) 
+	tween.tween_property(idle_particles_2d, "global_scale", Vector2(0.01, 0.01), 0.1) 
 	await tween.finished
-	sprite_2d.visible = false
-	idle_particles_2d.visible = false
+	destroy_particles_2d.modulate = modulate
+	destroy_particles_2d.reparent(get_parent())
 	destroy_particles_2d.emitting = true
-	await destroy_particles_2d.finished
 	queue_free()

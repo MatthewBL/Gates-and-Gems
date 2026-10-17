@@ -119,3 +119,6 @@ stream = ExtResource("5_7fkf7")
 [node name="Quicksand" type="TileMapLayer" parent="." unique_id=1107114903]
 z_index = 10
 tile_set = SubResource("TileSet_s6nli")
+
+[node name="DoorGemsContainer" type="Node2D" parent="." unique_id=918858841]
+unique_name_in_owner = true

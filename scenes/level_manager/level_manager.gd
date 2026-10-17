@@ -63,8 +63,12 @@ func free_gem(target_gem: Gem) -> void:
 	var gems = get_tree().get_nodes_in_group("Gem")
 	var id = target_gem.id
 	for gem in gems:
-		if gem.id == id:
+		if gem.id == id and gem != target_gem:
 			gem.destroy()
+	var color: Color = target_gem.modulate
+	await target_gem.destroy()
+	current_level.add_door_gem(color)
+
 
 
 func on_next_level() -> void:
