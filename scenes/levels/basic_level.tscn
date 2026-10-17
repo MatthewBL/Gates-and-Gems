@@ -43,7 +43,7 @@ unique_name_in_owner = true
 
 [node name="Door" parent="." unique_id=1757254397 instance=ExtResource("3_r68ba")]
 unique_name_in_owner = true
-position = Vector2(660.00006, 257)
+position = Vector2(660, 288)
 
 [node name="PlayerSpawnpoint" type="Marker2D" parent="." unique_id=1240467275]
 unique_name_in_owner = true
