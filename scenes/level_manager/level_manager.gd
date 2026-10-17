@@ -1,0 +1,65 @@
+class_name LevelManager
+extends Node2D
+
+
+@export var levels: Array[PackedScene]
+@export var player: PlayerMovement
+@export var fade_in_out: FadeInOut
+
+
+var current_level_index: int = 0
+var current_level: Level
+
+
+func _ready() -> void:
+	load_level(0)
+
+
+func load_level(level_index: int) -> void:
+	current_level_index = level_index
+	current_level = levels[current_level_index].instantiate() as Level
+	add_child(current_level)
+	
+	player.global_position = current_level.player_spawnpoint.global_position
+	current_level.gem_collected.connect(free_gem)
+	current_level.next_level.connect(on_next_level)
+	
+	var offsets: Array[Vector2] = [
+		Vector2(current_level.width, 0.0), #RIGHT
+		Vector2(-current_level.width, 0.0), #LEFT
+		Vector2(0.0, current_level.height), #DOWN
+		Vector2(0.0, -current_level.height), #UP
+		Vector2(current_level.width, -current_level.height), #UP-RIGHT
+		Vector2(-current_level.width, -current_level.height), #UP-LEFT
+		Vector2(current_level.width, current_level.height), #DOWN-RIGHT
+		Vector2(-current_level.width, current_level.height), #DOWN-LEFT
+	]
+	for offset: Vector2 in offsets:
+		var level_instance: Node2D = current_level.duplicate()
+		add_child(level_instance)
+		level_instance.position += offset
+
+
+func _physics_process(_delta: float) -> void:
+	if player.global_position.x > current_level.width:
+		player.global_position.x -= current_level.width
+	elif player.global_position.x < 0:
+		player.global_position.x += current_level.width
+	
+	if player.global_position.y > current_level.height:
+		player.global_position.y -= current_level.height
+	elif player.global_position.y < 0:
+		player.global_position.y += current_level.height
+
+
+func free_gem(target_gem: Gem) -> void:
+	var gems = get_tree().get_nodes_in_group("Gem")
+	var id = target_gem.id
+	for gem in gems:
+		if gem.id == id:
+			gem.queue_free()
+
+
+func on_next_level() -> void:
+	current_level.queue_free()
+	load_level.call_deferred(current_level_index + 1)

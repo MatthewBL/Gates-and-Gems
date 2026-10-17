@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twkdg"]
 size = Vector2(125.00342, 127.778564)
 
-[node name="Gem" type="Area2D" unique_id=82949541]
+[node name="Gem" type="Area2D" unique_id=82949541 groups=["Gem"]]
 scale = Vector2(0.31999025, 0.35999757)
 script = ExtResource("1_mpwtx")
 

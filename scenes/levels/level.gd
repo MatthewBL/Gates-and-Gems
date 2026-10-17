@@ -3,6 +3,7 @@ extends Node2D
 
 
 signal gem_collected(gem: Gem)
+signal next_level
 
 
 @export var width: float:
@@ -17,9 +18,12 @@ var gem_count: int
 
 
 @onready var gem_container: Node2D = %GemContainer
+@onready var door: Door = %Door
+@onready var player_spawnpoint: Marker2D = %PlayerSpawnpoint
 
 
 func _ready() -> void:
+	door.body_entered.connect(on_player_entered_door)
 	for child: Node in gem_container.get_children():
 		if child is Gem:
 			child.on_collected.connect(update_gem_count)
@@ -29,3 +33,10 @@ func _ready() -> void:
 func update_gem_count(gem: Gem):
 	gem_collected.emit(gem)
 	gem_count -= 1
+	if gem_count <= 0:
+		door.open_door()
+
+
+func on_player_entered_door(body: Node2D) -> void:
+	if body is PlayerMovement and door.is_opened:
+		next_level.emit()
