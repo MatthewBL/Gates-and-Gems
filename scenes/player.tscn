@@ -51,6 +51,7 @@ size = Vector2(10, 9)
 size = Vector2(24, 24)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=879361713 node_paths=PackedStringArray("how_to_press_e")]
+z_index = 1
 script = ExtResource("1_g2els")
 how_to_press_e = NodePath("HowToPressE")
 
