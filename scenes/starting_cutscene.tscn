@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://d0vl7v7snhji6"]
+
+[ext_resource type="Script" uid="uid://b6bi366yom6i5" path="res://scenes/starting_cutscene.gd" id="1_u2gcp"]
+[ext_resource type="Texture2D" uid="uid://dgusor4oc1b26" path="res://Assets/UI/space_key.png" id="2_e6xmt"]
+[ext_resource type="Texture2D" uid="uid://chpvmf574l47t" path="res://Assets/UI/enter_key.png" id="3_iuwd2"]
+
+[sub_resource type="Theme" id="Theme_s6nli"]
+default_font_size = 25
+
+[node name="StartingCutscene" type="Control" unique_id=1465507625 node_paths=PackedStringArray("text_label")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u2gcp")
+text_label = NodePath("PanelContainer/Label")
+text_lines = Array[String](["1...", "2...", "3...", "Hello world!", "End of the message."])
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1388454507]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 360.0
+color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1097961441]
+modulate = Color(1, 1, 1, 0.60784316)
+layout_mode = 0
+offset_left = 220.0
+offset_top = 280.0
+offset_right = 440.0
+offset_bottom = 328.0
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer" unique_id=597237126]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("2_e6xmt")
+stretch_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer" unique_id=1608112822]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("3_iuwd2")
+stretch_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1797851431]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 620.0
+offset_bottom = 340.0
+
+[node name="Label" type="Label" parent="PanelContainer" unique_id=111009800]
+layout_mode = 2
+theme = SubResource("Theme_s6nli")
+text = "Hello world"
+horizontal_alignment = 1
+vertical_alignment = 1
