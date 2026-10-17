@@ -11,14 +11,21 @@ var current_level_index: int = 0
 var current_level: Level
 
 
+@onready var level_container: Node2D = %LevelContainer
+
+
 func _ready() -> void:
 	load_level(0)
 
 
 func load_level(level_index: int) -> void:
+	if level_index == levels.size():
+		get_tree().quit()
+		return
+	
 	current_level_index = level_index
 	current_level = levels[current_level_index].instantiate() as Level
-	add_child(current_level)
+	level_container.add_child(current_level)
 	
 	player.global_position = current_level.player_spawnpoint.global_position
 	current_level.gem_collected.connect(free_gem)
@@ -36,7 +43,7 @@ func load_level(level_index: int) -> void:
 	]
 	for offset: Vector2 in offsets:
 		var level_instance: Node2D = current_level.duplicate()
-		add_child(level_instance)
+		level_container.add_child(level_instance)
 		level_instance.position += offset
 
 
@@ -61,5 +68,6 @@ func free_gem(target_gem: Gem) -> void:
 
 
 func on_next_level() -> void:
-	current_level.queue_free()
+	for level: Node in level_container.get_children():
+		level.queue_free()
 	load_level.call_deferred(current_level_index + 1)

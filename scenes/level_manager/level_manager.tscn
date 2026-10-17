@@ -12,3 +12,6 @@ player = NodePath("CharacterBody2D")
 
 [node name="CharacterBody2D" parent="." unique_id=879361713 instance=ExtResource("2_s5yp0")]
 position = Vector2(275, 261)
+
+[node name="LevelContainer" type="Node2D" parent="." unique_id=1309870415]
+unique_name_in_owner = true
