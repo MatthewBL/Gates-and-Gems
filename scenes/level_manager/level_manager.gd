@@ -64,6 +64,7 @@ func free_gem(target_gem: Gem) -> void:
 	var id = target_gem.id
 	for gem in gems:
 		if gem.id == id:
+			
 			gem.queue_free()
 
 
