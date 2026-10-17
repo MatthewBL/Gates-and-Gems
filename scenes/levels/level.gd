@@ -8,10 +8,10 @@ signal next_level
 
 @export var width: float:
 	get:
-		return width * 16
+		return width * 16 + 16
 @export var height: float:
 	get:
-		return height * 16
+		return height * 16 + 16
 
 
 var gem_count: int
