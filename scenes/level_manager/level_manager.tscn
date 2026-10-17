@@ -11,7 +11,7 @@
 
 [node name="LevelManager" type="Node2D" unique_id=1405935450 node_paths=PackedStringArray("player", "fade_in_out")]
 script = ExtResource("1_1hfdo")
-levels = Array[PackedScene]([ExtResource("2_ikvo2"), ExtResource("3_edw4w"), ExtResource("4_fly33"), ExtResource("5_cc64i")])
+levels = Array[PackedScene]([ExtResource("5_cc64i"), ExtResource("2_ikvo2"), ExtResource("3_edw4w"), ExtResource("4_fly33")])
 player = NodePath("CharacterBody2D")
 fade_in_out = NodePath("FadeInOut")
 
