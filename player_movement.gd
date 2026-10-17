@@ -13,11 +13,13 @@ var onQuickSand = false
 var interaction_node: Area2D
 
 var allow_movement: bool = true
+var wait_anim: bool = false
 
 
 @onready var interaction_detect: Area2D = %InteractionDetect
 
 @export var how_to_press_e: CanvasLayer
+@export var animated_sprite: AnimatedSprite2D
 
 
 func _unhandled_input(_event: InputEvent) -> void:
@@ -45,9 +47,6 @@ func _physics_process(delta: float) -> void:
 		velocity.y = MAX_DROP_VELOCITY
 
 	if allow_movement:
-		# Handle jump.
-		if Input.is_action_just_pressed("ui_accept") and (is_on_floor() or onQuickSand):
-			velocity.y += JUMP_VELOCITY
 
 		# Long jump.
 		if not Input.is_action_pressed("ui_accept") and !is_on_floor() and velocity.y < 0:
@@ -56,9 +55,33 @@ func _physics_process(delta: float) -> void:
 		# Get the input direction and handle the movement/deceleration.
 		var direction := Input.get_axis("ui_left", "ui_right")
 		if direction:
+			if is_on_floor():
+				if animated_sprite.animation == "jump_start":
+					animated_sprite.play("jump_end")
+					wait_anim = true
+					print("wait anim")
+				if not wait_anim:
+					animated_sprite.play("walk")
+			if direction > 0:
+				animated_sprite.flip_h = false
+			elif direction < 0:
+				animated_sprite.flip_h = true
 			velocity.x = direction * SPEED
 		else:
+			if is_on_floor():
+				if animated_sprite.animation == "jump_start":
+					animated_sprite.play("jump_end")
+					wait_anim = true
+					print("wait anim")
+				if not wait_anim:
+					animated_sprite.play("idle")
 			velocity.x = move_toward(velocity.x, 0, SPEED)
+
+		
+		# Handle jump.
+		if Input.is_action_just_pressed("ui_accept") and (is_on_floor() or onQuickSand):
+			animated_sprite.play("jump_start")
+			velocity.y += JUMP_VELOCITY
 
 	if (onQuickSand):
 		velocity*=QUICKSAND_MOVEMENT_VELOCITY_MULTIPLIER
@@ -94,3 +117,10 @@ func on_interaction_exited(area: Area2D) -> void:
 		interaction_node = null
 		if area.has_method(&"hide_outline"):
 			area.hide_outline()
+
+func _on_animated_sprite_2d_animation_looped() -> void:
+	wait_anim = false
+
+
+func _on_animated_sprite_2d_animation_finished() -> void:
+	wait_anim = false
