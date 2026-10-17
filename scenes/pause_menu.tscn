@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://btdsf8n7usyx0"]
+
+[ext_resource type="Script" uid="uid://d0jiopt3txemr" path="res://scenes/pause_menu.gd" id="1_n87rw"]
+
+[sub_resource type="Theme" id="Theme_uahpa"]
+default_font_size = 30
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=567695629 node_paths=PackedStringArray("main_options", "settings_menu")]
+script = ExtResource("1_n87rw")
+main_options = NodePath("PanelContainer/VBoxContainer/Menu")
+settings_menu = NodePath("PanelContainer/VBoxContainer/Settings")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=597887860]
+offset_right = 640.0
+offset_bottom = 360.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1119676605]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer" unique_id=154928267]
+custom_minimum_size = Vector2(0, 140)
+layout_mode = 2
+theme = SubResource("Theme_uahpa")
+text = "PAUSE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Menu" type="VBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=1056733200]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 8
+
+[node name="Resume" type="Button" parent="PanelContainer/VBoxContainer/Menu" unique_id=1764577104]
+process_mode = 3
+layout_mode = 2
+text = "Resume"
+
+[node name="Settings" type="Button" parent="PanelContainer/VBoxContainer/Menu" unique_id=1865710043]
+layout_mode = 2
+text = "Settings"
+
+[node name="Exit" type="Button" parent="PanelContainer/VBoxContainer/Menu" unique_id=722050105]
+layout_mode = 2
+text = "Exit"
+
+[node name="Settings" type="VBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=755399959]
+visible = false
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="MasterVol" type="Label" parent="PanelContainer/VBoxContainer/Settings" unique_id=1379385034]
+layout_mode = 2
+text = "Master Volume"
+horizontal_alignment = 1
+
+[node name="MasterVolSlider" type="HSlider" parent="PanelContainer/VBoxContainer/Settings" unique_id=76511772]
+layout_mode = 2
+max_value = 1.0
+step = 0.1
+value = 1.0
+
+[node name="Music" type="Label" parent="PanelContainer/VBoxContainer/Settings" unique_id=839271987]
+layout_mode = 2
+text = "Music"
+horizontal_alignment = 1
+
+[node name="MusicSlider" type="HSlider" parent="PanelContainer/VBoxContainer/Settings" unique_id=931560995]
+layout_mode = 2
+max_value = 1.0
+step = 0.1
+value = 1.0
+
+[node name="SFX" type="Label" parent="PanelContainer/VBoxContainer/Settings" unique_id=512469762]
+layout_mode = 2
+text = "SFX"
+horizontal_alignment = 1
+
+[node name="SFXSlider" type="HSlider" parent="PanelContainer/VBoxContainer/Settings" unique_id=1389810835]
+layout_mode = 2
+max_value = 1.0
+step = 0.1
+value = 1.0
+
+[node name="EmptySpace" type="Label" parent="PanelContainer/VBoxContainer/Settings" unique_id=1031358888]
+layout_mode = 2
+
+[node name="Apply" type="Button" parent="PanelContainer/VBoxContainer/Settings" unique_id=604122986]
+layout_mode = 2
+text = "Apply changes"
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Menu/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Menu/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Menu/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Settings/Apply" to="." method="_on_apply_pressed"]

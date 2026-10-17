@@ -52,7 +52,7 @@ func _physics_process(delta: float) -> void:
 
 
 	# Long jump.
-	if Input.is_action_just_released("ui_accept") and !is_on_floor() and velocity.y < 0:
+	if not Input.is_action_pressed("ui_accept") and !is_on_floor() and velocity.y < 0:
 		velocity.y = 0
 
 	# Get the input direction and handle the movement/deceleration.

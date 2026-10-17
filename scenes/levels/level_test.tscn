@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://n6hawyn447py" path="res://scenes/door.tscn" id="4_ycf23"]
 [ext_resource type="PackedScene" uid="uid://brfp15carawpf" path="res://scenes/gem.tscn" id="5_uh3ll"]
 [ext_resource type="PackedScene" uid="uid://dgwfxno32tioc" path="res://scenes/fade_in_out.tscn" id="6_uh3ll"]
+[ext_resource type="PackedScene" uid="uid://btdsf8n7usyx0" path="res://scenes/pause_menu.tscn" id="7_4lw2e"]
 
 [node name="LevelTest" type="Node2D" unique_id=1405935450 node_paths=PackedStringArray("level", "player", "fade_in_out")]
 script = ExtResource("1_jp5fc")
@@ -31,5 +32,9 @@ position = Vector2(371.00006, 549)
 id = &"2"
 
 [node name="FadeInOut" parent="." unique_id=1018078760 instance=ExtResource("6_uh3ll")]
+
+[node name="PauseMenu" parent="." unique_id=567695629 instance=ExtResource("7_4lw2e")]
+process_mode = 3
+visible = false
 
 [connection signal="body_entered" from="TestLevel/Door" to="CharacterBody2D" method="_on_door_body_entered"]
