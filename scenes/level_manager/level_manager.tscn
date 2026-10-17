@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dueeokby43ix5"]
 
 [ext_resource type="Script" uid="uid://di8sfxrlb1mwh" path="res://scenes/level_manager/level_manager.gd" id="1_1hfdo"]
+[ext_resource type="PackedScene" uid="uid://djaygxf3c4otm" path="res://scenes/levels/level_X.tscn" id="2_7xgxe"]
+[ext_resource type="PackedScene" uid="uid://d4if3a2uyiaqa" path="res://scenes/levels/level_8.tscn" id="2_21gto"]
 [ext_resource type="PackedScene" uid="uid://cnfn5dn68ras1" path="res://scenes/levels/level_6.tscn" id="2_a8du7"]
 [ext_resource type="PackedScene" uid="uid://df55vblscw7gg" path="res://scenes/levels/level_1.tscn" id="2_ikvo2"]
 [ext_resource type="PackedScene" uid="uid://c2bvjloe2a7ww" path="res://scenes/levels/level_5.tscn" id="2_k3jl4"]
@@ -10,11 +12,12 @@
 [ext_resource type="PackedScene" uid="uid://c36nhsxag4dmi" path="res://scenes/levels/level_3.tscn" id="4_fly33"]
 [ext_resource type="PackedScene" uid="uid://btdsf8n7usyx0" path="res://scenes/pause_menu.tscn" id="4_ikvo2"]
 [ext_resource type="PackedScene" uid="uid://bybqn33h0qsm6" path="res://scenes/levels/level_4.tscn" id="5_cc64i"]
+[ext_resource type="PackedScene" uid="uid://bw43bdndcrhdx" path="res://scenes/levels/level_7.tscn" id="8_j5hfo"]
 [ext_resource type="AudioStream" uid="uid://chlijg0ncq82b" path="res://audio/prepare_your_swords.mp3" id="11_7xgxe"]
 
 [node name="LevelManager" type="Node2D" unique_id=1405935450 node_paths=PackedStringArray("player", "fade_in_out")]
 script = ExtResource("1_1hfdo")
-levels = Array[PackedScene]([ExtResource("2_a8du7"), ExtResource("2_ikvo2"), ExtResource("3_edw4w"), ExtResource("4_fly33"), ExtResource("5_cc64i"), ExtResource("2_k3jl4")])
+levels = Array[PackedScene]([ExtResource("2_ikvo2"), ExtResource("3_edw4w"), ExtResource("4_fly33"), ExtResource("5_cc64i"), ExtResource("2_k3jl4"), ExtResource("2_a8du7"), ExtResource("8_j5hfo"), ExtResource("2_21gto"), ExtResource("2_7xgxe")])
 player = NodePath("CharacterBody2D")
 fade_in_out = NodePath("FadeInOut")
 
