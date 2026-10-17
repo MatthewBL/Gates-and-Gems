@@ -38,6 +38,7 @@ func _physics_process(_delta: float) -> void:
 	elif player.global_position.y < 0:
 		player.global_position.y += level.height
 
+
 func free_gem(target_gem: Gem) -> void:
 	var gems = get_tree().get_nodes_in_group("Gem")
 	var id = target_gem.id
