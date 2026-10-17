@@ -14,4 +14,5 @@ func _ready() -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body is PlayerMovement:
+		create_tween().tween_property(self, "global_scale", Vector2(0.5, 0.5), 0.25)
 		on_collected.emit(self)
