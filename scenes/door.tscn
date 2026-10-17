@@ -1,16 +1,18 @@
 [gd_scene format=3 uid="uid://n6hawyn447py"]
 
 [ext_resource type="Script" uid="uid://d3f8h1qb6s1u3" path="res://scenes/door.gd" id="1_uvdjg"]
+[ext_resource type="AudioStream" uid="uid://bdym50adkg30y" path="res://audio/freesound_community-loud-footsteps-62038.ogg" id="2_la1wf"]
 [ext_resource type="Texture2D" uid="uid://fbmfr6jlw4nl" path="res://Assets/Escenario/Elementos/puertas.png" id="2_uvdjg"]
 [ext_resource type="Texture2D" uid="uid://c3slhtlhg5xkc" path="res://Assets/Escenario/Elementos/puerta_outline.png" id="3_83dcw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s6nli"]
 size = Vector2(52, 61)
 
-[node name="Door" type="Area2D" unique_id=1757254397 groups=["Door"]]
+[node name="Door" type="Area2D" unique_id=1757254397 node_paths=PackedStringArray("footsteps") groups=["Door"]]
 collision_layer = 4
 collision_mask = 0
 script = ExtResource("1_uvdjg")
+footsteps = NodePath("AudioStreamPlayer2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=887197391]
 unique_name_in_owner = true
@@ -30,3 +32,7 @@ visible = false
 z_index = -5
 position = Vector2(25, -30)
 texture = ExtResource("3_83dcw")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1071324836]
+stream = ExtResource("2_la1wf")
+pitch_scale = 1.5
