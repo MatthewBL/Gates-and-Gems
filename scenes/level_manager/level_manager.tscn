@@ -7,10 +7,11 @@
 [ext_resource type="PackedScene" uid="uid://dgwfxno32tioc" path="res://scenes/fade_in_out.tscn" id="3_oxi2h"]
 [ext_resource type="PackedScene" uid="uid://c36nhsxag4dmi" path="res://scenes/levels/level_3.tscn" id="4_fly33"]
 [ext_resource type="PackedScene" uid="uid://btdsf8n7usyx0" path="res://scenes/pause_menu.tscn" id="4_ikvo2"]
+[ext_resource type="PackedScene" uid="uid://bybqn33h0qsm6" path="res://scenes/levels/level_4.tscn" id="5_cc64i"]
 
 [node name="LevelManager" type="Node2D" unique_id=1405935450 node_paths=PackedStringArray("player", "fade_in_out")]
 script = ExtResource("1_1hfdo")
-levels = Array[PackedScene]([ExtResource("2_ikvo2"), ExtResource("3_edw4w"), ExtResource("4_fly33")])
+levels = Array[PackedScene]([ExtResource("2_ikvo2"), ExtResource("3_edw4w"), ExtResource("4_fly33"), ExtResource("5_cc64i")])
 player = NodePath("CharacterBody2D")
 fade_in_out = NodePath("FadeInOut")
 

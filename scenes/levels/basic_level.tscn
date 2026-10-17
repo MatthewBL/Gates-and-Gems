@@ -51,6 +51,10 @@ texture = ExtResource("2_cmhs5")
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_cmhs5")
 
+[sub_resource type="TileSet" id="TileSet_s6nli"]
+physics_layer_0/collision_layer = 2
+physics_layer_0/collision_mask = 2
+
 [node name="BasicLevel" type="Node2D" unique_id=510901832]
 script = ExtResource("1_km6db")
 width = 47.0
@@ -70,3 +74,6 @@ position = Vector2(660, 288)
 unique_name_in_owner = true
 position = Vector2(167, 262)
 gizmo_extents = 16.0
+
+[node name="Quicksand" type="TileMapLayer" parent="." unique_id=1107114903]
+tile_set = SubResource("TileSet_s6nli")
