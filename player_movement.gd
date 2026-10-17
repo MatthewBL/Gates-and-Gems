@@ -8,6 +8,8 @@ const MAX_DROP_VELOCITY = 1200.0
 
 var gems = 0;
 
+@export var level_manager: LevelManager
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -40,13 +42,7 @@ func _physics_process(delta: float) -> void:
 func _on_door_body_entered(body: Node2D) -> void:
 	if gems >= 1:
 		print("Door entered")
+		level_manager.fade_in_out.fadeOut()
 	else:
 		print("Not enough gems")
-	pass # Replace with function body.
-
-
-func _on_gem_body_entered(body: Node2D) -> void:
-	gems += 1
-	print("Gem obtained")
-	body.queue_free()
 	pass # Replace with function body.

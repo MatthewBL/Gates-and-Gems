@@ -4,6 +4,7 @@ extends Node2D
 
 @export var level: Level
 @export var player: PlayerMovement
+@export var fade_in_out: FadeInOut
 
 
 func _ready() -> void:
