@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bpm4d2n1s1e0q" path="res://scenes/levels/basic_level.tscn" id="1_ksju7"]
 [ext_resource type="PackedScene" uid="uid://brfp15carawpf" path="res://scenes/gem.tscn" id="2_6iamk"]
+[ext_resource type="PackedScene" uid="uid://djeqe0yp5pkst" path="res://scenes/door_gem.tscn" id="3_nsrm0"]
 
 [node name="Level1" unique_id=510901832 instance=ExtResource("1_ksju7")]
 width = 51.0
@@ -18,3 +19,6 @@ position = Vector2(572, 288)
 
 [node name="PlayerSpawnpoint" parent="." index="3" unique_id=1240467275]
 position = Vector2(184, 278)
+
+[node name="DoorGem" parent="DoorGemsContainer" parent_id_path=PackedInt32Array(918858841) index="0" unique_id=991967074 instance=ExtResource("3_nsrm0")]
+position = Vector2(598, 218)
