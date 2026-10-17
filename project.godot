@@ -25,6 +25,7 @@ window/stretch/aspect="expand"
 [global_group]
 
 Gem="Gems of the level"
+Door=""
 
 [input]
 

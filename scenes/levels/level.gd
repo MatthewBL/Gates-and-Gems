@@ -21,6 +21,7 @@ var gem_count: int
 @onready var door: Door = %Door
 @onready var player_spawnpoint: Marker2D = %PlayerSpawnpoint
 
+var doors
 
 func _ready() -> void:
 	door.player_interacted.connect(on_player_interacted_door)
@@ -34,7 +35,9 @@ func update_gem_count(gem: Gem):
 	gem_collected.emit(gem)
 	gem_count -= 1
 	if gem_count <= 0:
-		door.open_door()
+		doors = get_tree().get_nodes_in_group("Door")
+		for door_instance in doors:
+			door_instance.open_door()
 
 
 func on_player_interacted_door() -> void:
