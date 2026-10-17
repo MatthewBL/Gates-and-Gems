@@ -1,22 +1,18 @@
 class_name Gem
 extends Area2D
 
-@export var id: StringName
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+signal on_collected(gem: Gem)
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+var id: StringName
+
+
+func _init() -> void:
+	id = name
 
 
 func _on_body_entered(body: Node2D) -> void:
 	if body is PlayerMovement:
 		print("Gem obtained")
 		on_collected.emit(self)
-	pass # Replace with function body.
-
-signal on_collected(gem: Gem)

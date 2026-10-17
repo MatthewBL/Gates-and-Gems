@@ -2,17 +2,41 @@ class_name Level
 extends Node2D
 
 
-@export var width: float
-@export var height: float
-@export var gem_count: int
-@export var gems: Array[Gem]
+signal gem_collected(gem: Gem)
+signal next_level
+
+
+@export var width: float:
+	get:
+		return width * 16
+@export var height: float:
+	get:
+		return height * 16
+
+
+var gem_count: int
+
+
+@onready var gem_container: Node2D = %GemContainer
+@onready var door: Door = %Door
+@onready var player_spawnpoint: Marker2D = %PlayerSpawnpoint
+
 
 func _ready() -> void:
-	for gem in gems:
-		gem.on_collected.connect(update_gem_count)
+	door.body_entered.connect(on_player_entered_door)
+	for child: Node in gem_container.get_children():
+		if child is Gem:
+			child.on_collected.connect(update_gem_count)
+			gem_count += 1
+
 
 func update_gem_count(gem: Gem):
 	gem_collected.emit(gem)
 	gem_count -= 1
+	if gem_count <= 0:
+		door.open_door()
 
-signal gem_collected(gem: Gem)
+
+func on_player_entered_door(body: Node2D) -> void:
+	if body is PlayerMovement and door.is_opened:
+		next_level.emit()

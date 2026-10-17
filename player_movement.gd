@@ -48,14 +48,9 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 
-func _on_door_body_entered(body: Node2D) -> void:
-	print("Door entered")
-	pass # Replace with function body.
-
-
-func _on_quicksand_detect_body_entered(body: Node2D) -> void:
+func _on_quicksand_detect_body_entered(_body: Node2D) -> void:
 	onQuickSand = true;
 
 
-func _on_quicksand_detect_body_exited(body: Node2D) -> void:
+func _on_quicksand_detect_body_exited(_body: Node2D) -> void:
 	onQuickSand = false;
