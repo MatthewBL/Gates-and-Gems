@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://v40swcvc25lm"]
 
 [ext_resource type="Script" uid="uid://whdndtkbkkg4" path="res://player_movement.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://bbc2ec3j6wxfx" path="res://icon.svg" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://xpva1mysjqpq" path="res://Assets/Escenario/pj_placeholder.png" id="2_dqkch"]
 [ext_resource type="Script" uid="uid://cryqnhm4bd1v" path="res://scenes/camera_2d.gd" id="3_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://neebscis582s" path="res://Assets/UI/e.png" id="4_dqkch"]
 
@@ -56,8 +56,7 @@ script = ExtResource("1_g2els")
 how_to_press_e = NodePath("HowToPressE")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1584324128]
-scale = Vector2(0.140625, 0.14062501)
-texture = ExtResource("2_qhqgy")
+texture = ExtResource("2_dqkch")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1747155850]
 shape = SubResource("RectangleShape2D_twkdg")
