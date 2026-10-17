@@ -1,19 +1,19 @@
 [gd_scene format=3 uid="uid://brfp15carawpf"]
 
 [ext_resource type="Script" uid="uid://e4xt6ietkd6" path="res://scenes/gem.gd" id="1_mpwtx"]
-[ext_resource type="Texture2D" uid="uid://bbc2ec3j6wxfx" path="res://icon.svg" id="2_bhq7q"]
+[ext_resource type="Texture2D" uid="uid://3tqq7dmhxs6t" path="res://Assets/Escenario/Elementos/gema.png" id="2_mpwtx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twkdg"]
-size = Vector2(125.00342, 127.778564)
+size = Vector2(14.000002, 29)
 
 [node name="Gem" type="Area2D" unique_id=82949541 groups=["Gem"]]
-scale = Vector2(0.31999025, 0.35999757)
 script = ExtResource("1_mpwtx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=172014522]
-texture = ExtResource("2_bhq7q")
+texture = ExtResource("2_mpwtx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1062909240]
+position = Vector2(0, 0.5)
 scale = Vector2(0.99999994, 1)
 shape = SubResource("RectangleShape2D_twkdg")
 
