@@ -15,6 +15,8 @@ var interaction_node: Area2D
 
 @onready var interaction_detect: Area2D = %InteractionDetect
 
+@export var how_to_press_e: CanvasLayer
+
 
 func _unhandled_input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed(&"interact"):
@@ -75,9 +77,11 @@ func _on_quicksand_detect_body_exited(_body: Node2D) -> void:
 
 
 func on_interaction_entered(area: Area2D) -> void:
+	how_to_press_e.show()
 	interaction_node = area
 
 
 func on_interaction_exited(area: Area2D) -> void:
+	how_to_press_e.hide()
 	if interaction_node == area:
 		interaction_node = null

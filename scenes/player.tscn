@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://whdndtkbkkg4" path="res://player_movement.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://bbc2ec3j6wxfx" path="res://icon.svg" id="2_qhqgy"]
 [ext_resource type="Script" uid="uid://cryqnhm4bd1v" path="res://scenes/camera_2d.gd" id="3_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://neebscis582s" path="res://Assets/UI/e.png" id="4_dqkch"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twkdg"]
 size = Vector2(16, 16)
@@ -49,8 +50,9 @@ size = Vector2(10, 9)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kpgvn"]
 size = Vector2(24, 24)
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=879361713]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=879361713 node_paths=PackedStringArray("how_to_press_e")]
 script = ExtResource("1_g2els")
+how_to_press_e = NodePath("HowToPressE")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1584324128]
 scale = Vector2(0.140625, 0.14062501)
@@ -83,6 +85,17 @@ collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionDetect" unique_id=185873357]
 shape = SubResource("RectangleShape2D_kpgvn")
+
+[node name="HowToPressE" type="CanvasLayer" parent="." unique_id=608996900]
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="HowToPressE" unique_id=831653868]
+offset_left = 317.0
+offset_top = 148.0
+offset_right = 333.0
+offset_bottom = 164.0
+texture = ExtResource("4_dqkch")
+stretch_mode = 2
 
 [connection signal="body_entered" from="QuicksandDetect" to="." method="_on_quicksand_detect_body_entered"]
 [connection signal="body_exited" from="QuicksandDetect" to="." method="_on_quicksand_detect_body_exited"]
