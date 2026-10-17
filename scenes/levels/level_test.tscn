@@ -9,27 +9,27 @@
 
 [node name="LevelTest" type="Node2D" unique_id=1405935450 node_paths=PackedStringArray("level", "player", "fade_in_out")]
 script = ExtResource("1_jp5fc")
-level = NodePath("Node2D")
+level = NodePath("TestLevel")
 player = NodePath("CharacterBody2D")
 fade_in_out = NodePath("FadeInOut")
 
 [node name="CharacterBody2D" parent="." unique_id=879361713 instance=ExtResource("2_4ptlp")]
 position = Vector2(520, 543)
 
-[node name="Node2D" parent="." unique_id=787758616 node_paths=PackedStringArray("gems") instance=ExtResource("3_ycf23")]
+[node name="TestLevel" parent="." unique_id=787758616 node_paths=PackedStringArray("gems") instance=ExtResource("3_ycf23")]
 gems = [NodePath("Gem"), NodePath("Gem2")]
 
-[node name="Door" parent="Node2D" unique_id=1757254397 instance=ExtResource("4_ycf23")]
+[node name="Door" parent="TestLevel" unique_id=1757254397 instance=ExtResource("4_ycf23")]
 position = Vector2(787, 546)
 
-[node name="Gem" parent="Node2D" unique_id=82949541 groups=["Gem"] instance=ExtResource("5_uh3ll")]
+[node name="Gem" parent="TestLevel" unique_id=82949541 groups=["Gem"] instance=ExtResource("5_uh3ll")]
 position = Vector2(536.00006, 400)
 id = &"1"
 
-[node name="Gem2" parent="Node2D" unique_id=1485944378 groups=["Gem"] instance=ExtResource("5_uh3ll")]
+[node name="Gem2" parent="TestLevel" unique_id=1485944378 groups=["Gem"] instance=ExtResource("5_uh3ll")]
 position = Vector2(371.00006, 549)
 id = &"2"
 
 [node name="FadeInOut" parent="." unique_id=1018078760 instance=ExtResource("6_uh3ll")]
 
-[connection signal="body_entered" from="Node2D/Door" to="CharacterBody2D" method="_on_door_body_entered"]
+[connection signal="body_entered" from="TestLevel/Door" to="CharacterBody2D" method="_on_door_body_entered"]
