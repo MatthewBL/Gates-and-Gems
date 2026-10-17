@@ -27,5 +27,6 @@ shape = SubResource("RectangleShape2D_s6nli")
 [node name="OutlineSprite2D" type="Sprite2D" parent="." unique_id=1909979155]
 unique_name_in_owner = true
 visible = false
+z_index = -5
 position = Vector2(25, -30)
 texture = ExtResource("3_83dcw")

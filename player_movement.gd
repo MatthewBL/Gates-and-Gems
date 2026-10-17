@@ -74,11 +74,21 @@ func _on_quicksand_detect_body_exited(_body: Node2D) -> void:
 
 
 func on_interaction_entered(area: Area2D) -> void:
+	if area is Door and not (area as Door).is_opened:
+		return
+	
 	how_to_press_e.show()
 	interaction_node = area
+	if area.has_method(&"show_outline"):
+		area.show_outline()
 
 
 func on_interaction_exited(area: Area2D) -> void:
+	if area is Door and not (area as Door).is_opened:
+		return
+	
 	how_to_press_e.hide()
 	if interaction_node == area:
 		interaction_node = null
+		if area.has_method(&"hide_outline"):
+			area.hide_outline()
