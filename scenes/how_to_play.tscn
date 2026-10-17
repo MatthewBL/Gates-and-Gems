@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://bwqk7xq4i3v0h"]
+
+[ext_resource type="Texture2D" uid="uid://dgusor4oc1b26" path="res://Assets/UI/space_key.png" id="1_30apa"]
+[ext_resource type="Texture2D" uid="uid://dt13xbol1bqto" path="res://Assets/UI/a.png" id="2_xkrkv"]
+[ext_resource type="Texture2D" uid="uid://cba5v60a5trjp" path="res://Assets/UI/d.png" id="3_wi5qh"]
+
+[node name="HowToPlay" type="Control" unique_id=1095843594]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=789547759]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=1245235113]
+offset_left = 127.5
+offset_top = 220.0
+offset_right = 527.5
+offset_bottom = 310.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer" unique_id=1191766379]
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer" unique_id=175365256]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=65119898]
+layout_mode = 2
+text = "Jump"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=1205230322]
+layout_mode = 2
+texture = ExtResource("1_30apa")
+stretch_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/VBoxContainer" unique_id=335946866]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer2" unique_id=979704454]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer2/VBoxContainer" unique_id=1615030116]
+layout_mode = 2
+text = "Left"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer2/VBoxContainer" unique_id=1536066283]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_xkrkv")
+stretch_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer2" unique_id=203571701]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer2/VBoxContainer2" unique_id=1144411094]
+layout_mode = 2
+text = "Right"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer2/VBoxContainer2" unique_id=1845063072]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("3_wi5qh")
+stretch_mode = 2
