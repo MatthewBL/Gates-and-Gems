@@ -247,298 +247,130 @@ position = Vector2(50, 712)
 [node name="Gem79" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="78" unique_id=2114986556 instance=ExtResource("2_nxmki")]
 position = Vector2(59, 731)
 
-[node name="Gem80" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="79" unique_id=1283221723 instance=ExtResource("2_nxmki")]
-position = Vector2(75, 731)
-
-[node name="Gem81" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="80" unique_id=1563939720 instance=ExtResource("2_nxmki")]
-position = Vector2(83, 747)
-
-[node name="Gem82" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="81" unique_id=1520840596 instance=ExtResource("2_nxmki")]
-position = Vector2(99, 755)
-
-[node name="Gem83" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="82" unique_id=1483576562 instance=ExtResource("2_nxmki")]
-position = Vector2(115, 739)
-
-[node name="Gem84" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="83" unique_id=1668684052 instance=ExtResource("2_nxmki")]
-position = Vector2(131, 755)
-
-[node name="Gem85" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="84" unique_id=835289057 instance=ExtResource("2_nxmki")]
-position = Vector2(147, 755)
-
-[node name="Gem86" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="85" unique_id=865751777 instance=ExtResource("2_nxmki")]
-position = Vector2(163, 739)
-
-[node name="Gem87" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="86" unique_id=1563680410 instance=ExtResource("2_nxmki")]
-position = Vector2(179, 723)
-
-[node name="Gem88" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="87" unique_id=114874212 instance=ExtResource("2_nxmki")]
-position = Vector2(195, 707)
-
-[node name="Gem89" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="88" unique_id=794250441 instance=ExtResource("2_nxmki")]
-position = Vector2(211, 691)
-
-[node name="Gem90" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="89" unique_id=1529074967 instance=ExtResource("2_nxmki")]
-position = Vector2(227, 675)
-
-[node name="Gem91" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="90" unique_id=1891352815 instance=ExtResource("2_nxmki")]
-position = Vector2(243, 683)
-
-[node name="Gem92" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="91" unique_id=709934049 instance=ExtResource("2_nxmki")]
-position = Vector2(252, 699)
-
-[node name="Gem93" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="92" unique_id=988841009 instance=ExtResource("2_nxmki")]
-position = Vector2(268, 715)
-
-[node name="Gem94" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="93" unique_id=1671305159 instance=ExtResource("2_nxmki")]
-position = Vector2(284, 691)
-
-[node name="Gem95" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="94" unique_id=421237913 instance=ExtResource("2_nxmki")]
-position = Vector2(300, 667)
-
-[node name="Gem96" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="95" unique_id=871774770 instance=ExtResource("2_nxmki")]
-position = Vector2(316, 651)
-
-[node name="Gem97" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="96" unique_id=1805899589 instance=ExtResource("2_nxmki")]
-position = Vector2(332, 627)
-
-[node name="Gem98" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="97" unique_id=26898632 instance=ExtResource("2_nxmki")]
-position = Vector2(348, 611)
-
-[node name="Gem99" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="98" unique_id=1270234241 instance=ExtResource("2_nxmki")]
-position = Vector2(364, 595)
-
-[node name="Gem100" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="99" unique_id=1867059761 instance=ExtResource("2_nxmki")]
-position = Vector2(380, 579)
-
-[node name="Gem101" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="100" unique_id=367174331 instance=ExtResource("2_nxmki")]
-position = Vector2(396, 563)
-
-[node name="Gem102" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="101" unique_id=1160020606 instance=ExtResource("2_nxmki")]
-position = Vector2(412, 547)
-
-[node name="Gem103" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="102" unique_id=283139131 instance=ExtResource("2_nxmki")]
-position = Vector2(428, 531)
-
-[node name="Gem104" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="103" unique_id=116661231 instance=ExtResource("2_nxmki")]
-position = Vector2(444, 515)
-
-[node name="Gem105" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="104" unique_id=721902426 instance=ExtResource("2_nxmki")]
-position = Vector2(460, 499)
-
-[node name="Gem106" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="105" unique_id=598916528 instance=ExtResource("2_nxmki")]
-position = Vector2(476, 483)
-
-[node name="Gem107" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="106" unique_id=925736362 instance=ExtResource("2_nxmki")]
-position = Vector2(492, 467)
-
-[node name="Gem108" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="107" unique_id=715409992 instance=ExtResource("2_nxmki")]
-position = Vector2(508, 452)
-
-[node name="Gem109" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="108" unique_id=1764088839 instance=ExtResource("2_nxmki")]
-position = Vector2(524, 444)
-
-[node name="Gem110" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="109" unique_id=206342613 instance=ExtResource("2_nxmki")]
-position = Vector2(554, 444)
-
-[node name="Gem111" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="110" unique_id=1842326178 instance=ExtResource("2_nxmki")]
-position = Vector2(570, 436)
-
-[node name="Gem112" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="111" unique_id=1638957837 instance=ExtResource("2_nxmki")]
-position = Vector2(586, 428)
-
-[node name="Gem113" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="112" unique_id=1440937351 instance=ExtResource("2_nxmki")]
-position = Vector2(586, 428)
-
-[node name="Gem114" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="113" unique_id=1470381708 instance=ExtResource("2_nxmki")]
+[node name="Gem114" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="79" unique_id=1470381708 instance=ExtResource("2_nxmki")]
 position = Vector2(594, 444)
 
-[node name="Gem115" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="114" unique_id=306238941 instance=ExtResource("2_nxmki")]
+[node name="Gem115" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="80" unique_id=306238941 instance=ExtResource("2_nxmki")]
 position = Vector2(602, 460)
 
-[node name="Gem116" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="115" unique_id=164124669 instance=ExtResource("2_nxmki")]
+[node name="Gem116" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="81" unique_id=164124669 instance=ExtResource("2_nxmki")]
 position = Vector2(610, 476)
 
-[node name="Gem117" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="116" unique_id=699206990 instance=ExtResource("2_nxmki")]
+[node name="Gem117" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="82" unique_id=699206990 instance=ExtResource("2_nxmki")]
 position = Vector2(618, 500)
 
-[node name="Gem118" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="117" unique_id=626521385 instance=ExtResource("2_nxmki")]
+[node name="Gem118" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="83" unique_id=626521385 instance=ExtResource("2_nxmki")]
 position = Vector2(626, 516)
 
-[node name="Gem119" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="118" unique_id=1093330097 instance=ExtResource("2_nxmki")]
+[node name="Gem119" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="84" unique_id=1093330097 instance=ExtResource("2_nxmki")]
 position = Vector2(634, 532)
 
-[node name="Gem120" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="119" unique_id=530570379 instance=ExtResource("2_nxmki")]
+[node name="Gem120" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="85" unique_id=530570379 instance=ExtResource("2_nxmki")]
 position = Vector2(642, 548)
 
-[node name="Gem121" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="120" unique_id=1246293649 instance=ExtResource("2_nxmki")]
+[node name="Gem121" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="86" unique_id=1246293649 instance=ExtResource("2_nxmki")]
 position = Vector2(650, 564)
 
-[node name="Gem122" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="121" unique_id=1404684844 instance=ExtResource("2_nxmki")]
+[node name="Gem122" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="87" unique_id=1404684844 instance=ExtResource("2_nxmki")]
 position = Vector2(658, 580)
 
-[node name="Gem123" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="122" unique_id=1149906616 instance=ExtResource("2_nxmki")]
+[node name="Gem123" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="88" unique_id=1149906616 instance=ExtResource("2_nxmki")]
 position = Vector2(666, 596)
 
-[node name="Gem124" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="123" unique_id=525655753 instance=ExtResource("2_nxmki")]
+[node name="Gem124" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="89" unique_id=525655753 instance=ExtResource("2_nxmki")]
 position = Vector2(674, 620)
 
-[node name="Gem125" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="124" unique_id=1534368010 instance=ExtResource("2_nxmki")]
+[node name="Gem125" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="90" unique_id=1534368010 instance=ExtResource("2_nxmki")]
 position = Vector2(682, 644)
 
-[node name="Gem126" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="125" unique_id=1465842424 instance=ExtResource("2_nxmki")]
+[node name="Gem126" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="91" unique_id=1465842424 instance=ExtResource("2_nxmki")]
 position = Vector2(690, 668)
 
-[node name="Gem127" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="126" unique_id=2037012325 instance=ExtResource("2_nxmki")]
+[node name="Gem127" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="92" unique_id=2037012325 instance=ExtResource("2_nxmki")]
 position = Vector2(698, 692)
 
-[node name="Gem128" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="127" unique_id=702957651 instance=ExtResource("2_nxmki")]
+[node name="Gem128" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="93" unique_id=702957651 instance=ExtResource("2_nxmki")]
 position = Vector2(706, 716)
 
-[node name="Gem129" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="128" unique_id=1401719280 instance=ExtResource("2_nxmki")]
+[node name="Gem129" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="94" unique_id=1401719280 instance=ExtResource("2_nxmki")]
 position = Vector2(714, 740)
 
-[node name="Gem130" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="129" unique_id=773485193 instance=ExtResource("2_nxmki")]
+[node name="Gem130" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="95" unique_id=773485193 instance=ExtResource("2_nxmki")]
 position = Vector2(722, 764)
 
-[node name="Gem131" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="130" unique_id=708287477 instance=ExtResource("2_nxmki")]
+[node name="Gem131" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="96" unique_id=708287477 instance=ExtResource("2_nxmki")]
 position = Vector2(730, 788)
 
-[node name="Gem132" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="131" unique_id=1147712882 instance=ExtResource("2_nxmki")]
-position = Vector2(730, 20)
-
-[node name="Gem133" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="132" unique_id=920431615 instance=ExtResource("2_nxmki")]
-position = Vector2(738, 36)
-
-[node name="Gem134" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="133" unique_id=1898110896 instance=ExtResource("2_nxmki")]
-position = Vector2(746, 52)
-
-[node name="Gem135" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="134" unique_id=2034087561 instance=ExtResource("2_nxmki")]
-position = Vector2(754, 68)
-
-[node name="Gem136" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="135" unique_id=140718395 instance=ExtResource("2_nxmki")]
-position = Vector2(762, 84)
-
-[node name="Gem137" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="136" unique_id=181014416 instance=ExtResource("2_nxmki")]
-position = Vector2(770, 100)
-
-[node name="Gem138" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="137" unique_id=1868631236 instance=ExtResource("2_nxmki")]
-position = Vector2(778, 116)
-
-[node name="Gem139" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="138" unique_id=961666559 instance=ExtResource("2_nxmki")]
-position = Vector2(786, 132)
-
-[node name="Gem140" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="139" unique_id=1927948759 instance=ExtResource("2_nxmki")]
-position = Vector2(795, 124)
-
-[node name="Gem141" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="140" unique_id=1866204292 instance=ExtResource("2_nxmki")]
-position = Vector2(803, 116)
-
-[node name="Gem142" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="141" unique_id=166906007 instance=ExtResource("2_nxmki")]
+[node name="Gem142" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="97" unique_id=166906007 instance=ExtResource("2_nxmki")]
 position = Vector2(11, 108)
 
-[node name="Gem143" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="142" unique_id=1697582484 instance=ExtResource("2_nxmki")]
+[node name="Gem143" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="98" unique_id=1697582484 instance=ExtResource("2_nxmki")]
 position = Vector2(19, 100)
 
-[node name="Gem144" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="143" unique_id=1426016942 instance=ExtResource("2_nxmki")]
+[node name="Gem144" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="99" unique_id=1426016942 instance=ExtResource("2_nxmki")]
 position = Vector2(27, 92)
 
-[node name="Gem145" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="144" unique_id=232227311 instance=ExtResource("2_nxmki")]
+[node name="Gem145" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="100" unique_id=232227311 instance=ExtResource("2_nxmki")]
 position = Vector2(35, 84)
 
-[node name="Gem146" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="145" unique_id=1276707884 instance=ExtResource("2_nxmki")]
-position = Vector2(51, 76)
-
-[node name="Gem147" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="146" unique_id=1629671883 instance=ExtResource("2_nxmki")]
-position = Vector2(67, 84)
-
-[node name="Gem148" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="147" unique_id=1595111528 instance=ExtResource("2_nxmki")]
-position = Vector2(83, 92)
-
-[node name="Gem149" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="148" unique_id=833078614 instance=ExtResource("2_nxmki")]
-position = Vector2(99, 108)
-
-[node name="Gem150" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="149" unique_id=1878707710 instance=ExtResource("2_nxmki")]
-position = Vector2(115, 124)
-
-[node name="Gem151" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="150" unique_id=1458810763 instance=ExtResource("2_nxmki")]
-position = Vector2(132, 141)
-
-[node name="Gem152" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="151" unique_id=2056983054 instance=ExtResource("2_nxmki")]
-position = Vector2(148, 149)
-
-[node name="Gem153" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="152" unique_id=383821667 instance=ExtResource("2_nxmki")]
-position = Vector2(164, 141)
-
-[node name="Gem154" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="153" unique_id=1108111983 instance=ExtResource("2_nxmki")]
-position = Vector2(180, 125)
-
-[node name="Gem155" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="154" unique_id=430068618 instance=ExtResource("2_nxmki")]
-position = Vector2(196, 109)
-
-[node name="Gem156" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="155" unique_id=1511897780 instance=ExtResource("2_nxmki")]
-position = Vector2(212, 93)
-
-[node name="Gem157" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="156" unique_id=1255791845 instance=ExtResource("2_nxmki")]
-position = Vector2(228, 77)
-
-[node name="Gem158" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="157" unique_id=1628527289 instance=ExtResource("2_nxmki")]
+[node name="Gem158" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="101" unique_id=1628527289 instance=ExtResource("2_nxmki")]
 position = Vector2(244, 77)
 
-[node name="Gem159" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="158" unique_id=1903102075 instance=ExtResource("2_nxmki")]
+[node name="Gem159" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="102" unique_id=1903102075 instance=ExtResource("2_nxmki")]
 position = Vector2(260, 93)
 
-[node name="Gem160" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="159" unique_id=1349808993 instance=ExtResource("2_nxmki")]
+[node name="Gem160" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="103" unique_id=1349808993 instance=ExtResource("2_nxmki")]
 position = Vector2(276, 109)
 
-[node name="Gem161" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="160" unique_id=2143878226 instance=ExtResource("2_nxmki")]
+[node name="Gem161" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="104" unique_id=2143878226 instance=ExtResource("2_nxmki")]
 position = Vector2(292, 125)
 
-[node name="Gem162" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="161" unique_id=1330114776 instance=ExtResource("2_nxmki")]
+[node name="Gem162" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="105" unique_id=1330114776 instance=ExtResource("2_nxmki")]
 position = Vector2(308, 141)
 
-[node name="Gem163" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="162" unique_id=1831387699 instance=ExtResource("2_nxmki")]
+[node name="Gem163" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="106" unique_id=1831387699 instance=ExtResource("2_nxmki")]
 position = Vector2(316, 157)
 
-[node name="Gem164" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="163" unique_id=620153003 instance=ExtResource("2_nxmki")]
+[node name="Gem164" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="107" unique_id=620153003 instance=ExtResource("2_nxmki")]
 position = Vector2(324, 173)
 
-[node name="Gem165" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="164" unique_id=1631117006 instance=ExtResource("2_nxmki")]
+[node name="Gem165" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="108" unique_id=1631117006 instance=ExtResource("2_nxmki")]
 position = Vector2(333, 189)
 
-[node name="Gem166" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="165" unique_id=137893255 instance=ExtResource("2_nxmki")]
+[node name="Gem166" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="109" unique_id=137893255 instance=ExtResource("2_nxmki")]
 position = Vector2(349, 205)
 
-[node name="Gem167" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="166" unique_id=1662511747 instance=ExtResource("2_nxmki")]
+[node name="Gem167" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="110" unique_id=1662511747 instance=ExtResource("2_nxmki")]
 position = Vector2(349, 205)
 
-[node name="Gem168" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="167" unique_id=1277023735 instance=ExtResource("2_nxmki")]
+[node name="Gem168" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="111" unique_id=1277023735 instance=ExtResource("2_nxmki")]
 position = Vector2(357, 221)
 
-[node name="Gem169" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="168" unique_id=1713830284 instance=ExtResource("2_nxmki")]
+[node name="Gem169" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="112" unique_id=1713830284 instance=ExtResource("2_nxmki")]
 position = Vector2(341, 197)
 
-[node name="Gem170" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="169" unique_id=1248080861 instance=ExtResource("2_nxmki")]
+[node name="Gem170" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="113" unique_id=1248080861 instance=ExtResource("2_nxmki")]
 position = Vector2(365, 237)
 
-[node name="Gem171" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="170" unique_id=1890750733 instance=ExtResource("2_nxmki")]
+[node name="Gem171" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="114" unique_id=1890750733 instance=ExtResource("2_nxmki")]
 position = Vector2(373, 253)
 
-[node name="Gem172" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="171" unique_id=1326431105 instance=ExtResource("2_nxmki")]
+[node name="Gem172" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="115" unique_id=1326431105 instance=ExtResource("2_nxmki")]
 position = Vector2(381, 277)
 
-[node name="Gem173" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="172" unique_id=400147903 instance=ExtResource("2_nxmki")]
+[node name="Gem173" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="116" unique_id=400147903 instance=ExtResource("2_nxmki")]
 position = Vector2(389, 292)
 
-[node name="Gem174" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="173" unique_id=1623136119 instance=ExtResource("2_nxmki")]
+[node name="Gem174" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="117" unique_id=1623136119 instance=ExtResource("2_nxmki")]
 position = Vector2(397, 316)
 
-[node name="Gem175" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="174" unique_id=111870864 instance=ExtResource("2_nxmki")]
+[node name="Gem175" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="118" unique_id=111870864 instance=ExtResource("2_nxmki")]
 position = Vector2(397, 316)
 
-[node name="Gem176" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="175" unique_id=1588039617 instance=ExtResource("2_nxmki")]
+[node name="Gem176" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="119" unique_id=1588039617 instance=ExtResource("2_nxmki")]
 position = Vector2(405, 332)
 
-[node name="Gem177" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="176" unique_id=206698930 instance=ExtResource("2_nxmki")]
+[node name="Gem177" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="120" unique_id=206698930 instance=ExtResource("2_nxmki")]
 position = Vector2(413, 347)
 
 [node name="Door" parent="." index="2" unique_id=1757254397]
