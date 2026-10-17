@@ -69,6 +69,12 @@ func free_gem(target_gem: Gem) -> void:
 
 
 func on_next_level() -> void:
+	player.allow_movement = false
+	player.velocity.x = 0
+	fade_in_out.fadeOut()
+	await get_tree().create_timer(1).timeout
+	fade_in_out.fadeIn()
+	player.allow_movement = true
 	for level: Node in level_container.get_children():
 		level.queue_free()
 	load_level.call_deferred(current_level_index + 1)
