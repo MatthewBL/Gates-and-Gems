@@ -5,7 +5,6 @@ extends Node2D
 @export var level: Level
 @export var player: PlayerMovement
 @export var fade_in_out: FadeInOut
-@export var gem_count: int
 
 
 func _ready() -> void:
@@ -24,6 +23,8 @@ func _ready() -> void:
 		var level_instance: Node2D = level.duplicate()
 		add_child(level_instance)
 		level_instance.position += offset
+
+	level.gem_collected.connect(free_gem)
 
 
 func _physics_process(_delta: float) -> void:
