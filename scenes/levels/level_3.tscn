@@ -23,3 +23,6 @@ position = Vector2(672, 416)
 
 [node name="Door" parent="." index="2" unique_id=1757254397]
 position = Vector2(448, 400)
+
+[node name="PlayerSpawnpoint" parent="." index="3" unique_id=1240467275]
+position = Vector2(167, 392)
