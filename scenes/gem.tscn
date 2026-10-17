@@ -22,8 +22,8 @@ curve = SubResource("Curve_rj4j3")
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kpgvn"]
 particle_flag_disable_z = true
 spread = 180.0
-initial_velocity_min = 5.0
-initial_velocity_max = 12.0
+initial_velocity_min = 7.0
+initial_velocity_max = 15.0
 gravity = Vector3(0, 0, 0)
 alpha_curve = SubResource("CurveTexture_7gj2l")
 emission_curve = SubResource("CurveTexture_bhq7q")
@@ -48,7 +48,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("GPUParticles2D:position")
+tracks/1/path = NodePath("IdleParticles2D:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -76,7 +76,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("GPUParticles2D:position")
+tracks/1/path = NodePath("IdleParticles2D:position")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -95,7 +95,8 @@ _data = {
 [node name="Gem" type="Area2D" unique_id=82949541 groups=["Gem"]]
 script = ExtResource("1_mpwtx")
 
-[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=2114408036]
+[node name="IdleParticles2D" type="GPUParticles2D" parent="." unique_id=2114408036]
+unique_name_in_owner = true
 amount = 16
 texture = ExtResource("2_bhq7q")
 lifetime = 1.2
@@ -103,7 +104,19 @@ preprocess = 2.0
 randomness = 1.0
 process_material = SubResource("ParticleProcessMaterial_kpgvn")
 
+[node name="DestroyParticles2D" type="GPUParticles2D" parent="." unique_id=318482897]
+unique_name_in_owner = true
+emitting = false
+amount = 18
+texture = ExtResource("2_bhq7q")
+lifetime = 1.2
+one_shot = true
+explosiveness = 1.0
+randomness = 1.0
+process_material = SubResource("ParticleProcessMaterial_kpgvn")
+
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=172014522]
+unique_name_in_owner = true
 texture = ExtResource("2_mpwtx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1062909240]
