@@ -21,4 +21,4 @@ position = Vector2(320, 338)
 position = Vector2(419, 20)
 
 [node name="Door" parent="." index="2" unique_id=1757254397]
-position = Vector2(660, 273)
+position = Vector2(660, 272)
