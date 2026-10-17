@@ -40,7 +40,7 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_door_body_entered(body: Node2D) -> void:
-	if gems >= 1:
+	if gems >= level_manager.gems:
 		print("Door entered")
 		level_manager.fade_in_out.fadeOut()
 	else:
