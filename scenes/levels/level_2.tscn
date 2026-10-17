@@ -16,4 +16,4 @@ position = Vector2(400, 288)
 position = Vector2(256, 304)
 
 [node name="PlayerSpawnpoint" parent="." index="3" unique_id=1240467275]
-position = Vector2(176, 288)
+position = Vector2(176, 299)
