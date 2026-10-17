@@ -7,6 +7,8 @@ signal player_interacted
 
 var is_opened: bool = false
 
+@export var footsteps: AudioStreamPlayer2D
+
 
 @onready var sprite_2d: Sprite2D = %Sprite2D
 @onready var outline_sprite_2d: Sprite2D = %OutlineSprite2D
@@ -27,3 +29,6 @@ func show_outline() -> void:
 
 func hide_outline() -> void:
 	outline_sprite_2d.visible = false
+
+func play_footsteps() -> void:
+	footsteps.play()

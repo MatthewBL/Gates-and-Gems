@@ -42,4 +42,5 @@ func update_gem_count(gem: Gem):
 
 func on_player_interacted_door() -> void:
 	if door.is_opened:
+		door.play_footsteps()
 		next_level.emit()
