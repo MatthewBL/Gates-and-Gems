@@ -4,6 +4,7 @@ extends CharacterBody2D
 const SPEED = 200.0
 const JUMP_VELOCITY = -300.0
 const QUICKSAND_MOVEMENT_VELOCITY_MULTIPLIER = 0.5
+const QUICKSAND_JUMP_VELOCITY_MULTIPLIER = 1.5
 const MAX_DROP_VELOCITY = 600.0
 const MAX_QUICKSAND_VELOCITY = 100.0
 const QUICKSAND_GRAVITY_MULTIPLIER = 0.2
@@ -47,7 +48,10 @@ func _physics_process(delta: float) -> void:
 	if allow_movement:
 		# Handle jump.
 		if Input.is_action_just_pressed("ui_accept") and (is_on_floor() or onQuickSand):
-			velocity.y += JUMP_VELOCITY
+			if onQuickSand:
+				velocity.y += JUMP_VELOCITY * QUICKSAND_JUMP_VELOCITY_MULTIPLIER
+			else:
+				velocity.y += JUMP_VELOCITY
 
 		# Long jump.
 		if not Input.is_action_pressed("ui_accept") and !is_on_floor() and velocity.y < 0:
