@@ -23,7 +23,7 @@ var gem_count: int
 
 
 func _ready() -> void:
-	door.body_entered.connect(on_player_entered_door)
+	door.player_interacted.connect(on_player_interacted_door)
 	for child: Node in gem_container.get_children():
 		if child is Gem:
 			child.on_collected.connect(update_gem_count)
@@ -37,6 +37,6 @@ func update_gem_count(gem: Gem):
 		door.open_door()
 
 
-func on_player_entered_door(body: Node2D) -> void:
-	if body is PlayerMovement and door.is_opened:
+func on_player_interacted_door() -> void:
+	if door.is_opened:
 		next_level.emit()

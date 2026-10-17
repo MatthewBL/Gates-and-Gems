@@ -9,6 +9,24 @@ const MAX_QUICKSAND_VELOCITY = 100.0
 const QUICKSAND_GRAVITY_MULTIPLIER = 0.2
 var onQuickSand = false
 
+
+var interaction_node: Area2D
+
+
+@onready var interaction_detect: Area2D = %InteractionDetect
+
+
+func _unhandled_input(_event: InputEvent) -> void:
+	if Input.is_action_just_pressed(&"interact"):
+		if interaction_node != null and interaction_node.has_method(&"interact"):
+			interaction_node.interact()
+
+
+func _ready() -> void:
+	interaction_detect.area_entered.connect(on_interaction_entered)
+	interaction_detect.area_exited.connect(on_interaction_exited)
+
+
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
@@ -54,3 +72,12 @@ func _on_quicksand_detect_body_entered(_body: Node2D) -> void:
 
 func _on_quicksand_detect_body_exited(_body: Node2D) -> void:
 	onQuickSand = false;
+
+
+func on_interaction_entered(area: Area2D) -> void:
+	interaction_node = area
+
+
+func on_interaction_exited(area: Area2D) -> void:
+	if interaction_node == area:
+		interaction_node = null
