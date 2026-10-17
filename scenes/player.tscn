@@ -6,6 +6,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twkdg"]
 size = Vector2(16, 16)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s6nli"]
+size = Vector2(10, 9)
+
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=879361713]
 script = ExtResource("1_g2els")
 
@@ -17,3 +20,14 @@ texture = ExtResource("2_qhqgy")
 shape = SubResource("RectangleShape2D_twkdg")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1569368740]
+
+[node name="QuicksandDetect" type="Area2D" parent="." unique_id=1775424178]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="QuicksandDetect" unique_id=405633925]
+position = Vector2(0, 5.5)
+shape = SubResource("RectangleShape2D_s6nli")
+
+[connection signal="body_entered" from="QuicksandDetect" to="." method="_on_quicksand_detect_body_entered"]
+[connection signal="body_exited" from="QuicksandDetect" to="." method="_on_quicksand_detect_body_exited"]
