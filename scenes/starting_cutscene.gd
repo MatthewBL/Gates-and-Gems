@@ -29,6 +29,7 @@ func _process(delta: float) -> void:
 			var instance = level_manager.instantiate()
 			get_tree().root.add_child(instance)
 			fade_in_out.fadeIn()
+			queue_free()
 		else:
 			text_label.text = text_lines[i]
 		if input_enabled and Input.is_action_just_pressed("ui_accept"):
