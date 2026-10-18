@@ -6,6 +6,7 @@
 default_font_size = 30
 
 [node name="PauseMenu" type="CanvasLayer" unique_id=567695629 node_paths=PackedStringArray("main_options", "settings_menu")]
+layer = 100
 script = ExtResource("1_n87rw")
 main_options = NodePath("PanelContainer/VBoxContainer/Menu")
 settings_menu = NodePath("PanelContainer/VBoxContainer/Settings")

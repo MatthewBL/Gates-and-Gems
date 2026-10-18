@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bpm4d2n1s1e0q" path="res://scenes/levels/basic_level.tscn" id="1_g2h2n"]
 [ext_resource type="PackedScene" uid="uid://brfp15carawpf" path="res://scenes/gem.tscn" id="2_ra442"]
 [ext_resource type="PackedScene" uid="uid://djeqe0yp5pkst" path="res://scenes/door_gem.tscn" id="3_ra442"]
+[ext_resource type="PackedScene" uid="uid://bwqk7xq4i3v0h" path="res://scenes/how_to_play.tscn" id="4_fiq81"]
 
 [node name="BasicLevel" unique_id=510901832 instance=ExtResource("1_g2h2n")]
 width = 43.0
@@ -22,3 +23,5 @@ position = Vector2(176, 299)
 
 [node name="DoorGem" parent="DoorGemsContainer" parent_id_path=PackedInt32Array(918858841) index="0" unique_id=991967074 instance=ExtResource("3_ra442")]
 position = Vector2(282, 235)
+
+[node name="HowToPlay" parent="." index="9" unique_id=1095843594 instance=ExtResource("4_fiq81")]

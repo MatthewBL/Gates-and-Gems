@@ -20,6 +20,7 @@ var wait_anim: bool = false
 
 @export var how_to_press_e: CanvasLayer
 @export var animated_sprite: AnimatedSprite2D
+@export var camera: ShakeCamera
 
 
 func _unhandled_input(_event: InputEvent) -> void:
@@ -34,13 +35,17 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
+	interaction_detect.monitoring = true
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
+		interaction_detect.monitoring = false
 
 	# Max quicksand velocity
-	if onQuickSand and velocity.y > MAX_QUICKSAND_VELOCITY:
-		velocity.y = MAX_QUICKSAND_VELOCITY
+	if onQuickSand:
+		interaction_detect.monitoring = false
+		if velocity.y > MAX_QUICKSAND_VELOCITY:
+			velocity.y = MAX_QUICKSAND_VELOCITY
 		
 	# Max drop velocity
 	if velocity.y > MAX_DROP_VELOCITY:
@@ -86,7 +91,8 @@ func _physics_process(delta: float) -> void:
 	if (onQuickSand):
 		velocity*=QUICKSAND_MOVEMENT_VELOCITY_MULTIPLIER
 
-	move_and_slide()
+	if (allow_movement):
+		move_and_slide()
 
 
 func _on_quicksand_detect_body_entered(_body: Node2D) -> void:
@@ -99,7 +105,7 @@ func _on_quicksand_detect_body_exited(_body: Node2D) -> void:
 
 
 func on_interaction_entered(area: Area2D) -> void:
-	if area is Door and not (area as Door).is_opened:
+	if area is Door and not (area as Door).is_opened and (not is_on_floor() or onQuickSand):
 		return
 	
 	how_to_press_e.show()
@@ -124,3 +130,6 @@ func _on_animated_sprite_2d_animation_looped() -> void:
 
 func _on_animated_sprite_2d_animation_finished() -> void:
 	wait_anim = false
+
+func shakeCamera() -> void:
+	camera.shake()

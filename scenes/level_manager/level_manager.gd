@@ -30,6 +30,7 @@ func load_level(level_index: int) -> void:
 	player.global_position = current_level.player_spawnpoint.global_position
 	current_level.gem_collected.connect(free_gem)
 	current_level.next_level.connect(on_next_level)
+	current_level.open_door_signal.connect(shake_camera)
 	
 	var offsets: Array[Vector2] = [
 		Vector2(current_level.width, 0.0), #RIGHT
@@ -73,6 +74,15 @@ func free_gem(target_gem: Gem) -> void:
 
 
 func on_next_level() -> void:
+	player.allow_movement = false
+	fade_in_out.fadeOut()
+	await get_tree().create_timer(1).timeout
 	for level: Node in level_container.get_children():
 		level.queue_free()
 	load_level.call_deferred(current_level_index + 1)
+	await get_tree().create_timer(0.1).timeout
+	fade_in_out.fadeIn()
+	player.allow_movement = true
+
+func shake_camera() -> void:
+	player.shakeCamera()
