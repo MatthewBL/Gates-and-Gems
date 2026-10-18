@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://hjq3ji0nnmrs"]
 
 [ext_resource type="Script" uid="uid://sxhf0kktrtr7" path="res://scenes/credits.gd" id="1_0bpdh"]
+[ext_resource type="FontFile" uid="uid://bvh5ptwgqdhyh" path="res://Assets/UI/VT323-Regular.ttf" id="2_2ckv8"]
 
 [sub_resource type="Theme" id="Theme_yeqti"]
+default_font = ExtResource("2_2ckv8")
 default_font_size = 24
 
 [sub_resource type="Theme" id="Theme_0bpdh"]

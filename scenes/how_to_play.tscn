@@ -1,8 +1,12 @@
 [gd_scene format=3 uid="uid://bwqk7xq4i3v0h"]
 
 [ext_resource type="Texture2D" uid="uid://dgusor4oc1b26" path="res://Assets/UI/space_key.png" id="1_30apa"]
+[ext_resource type="FontFile" uid="uid://bvh5ptwgqdhyh" path="res://Assets/UI/VT323-Regular.ttf" id="1_xkrkv"]
 [ext_resource type="Texture2D" uid="uid://dt13xbol1bqto" path="res://Assets/UI/a.png" id="2_xkrkv"]
 [ext_resource type="Texture2D" uid="uid://cba5v60a5trjp" path="res://Assets/UI/d.png" id="3_wi5qh"]
+
+[sub_resource type="Theme" id="Theme_0ctdu"]
+default_font = ExtResource("1_xkrkv")
 
 [node name="HowToPlay" type="Control" unique_id=1095843594]
 layout_mode = 3
@@ -31,6 +35,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=65119898]
 layout_mode = 2
+theme = SubResource("Theme_0ctdu")
 text = "Jump"
 horizontal_alignment = 1
 
@@ -50,6 +55,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer2/VBoxContainer" unique_id=1615030116]
 layout_mode = 2
+theme = SubResource("Theme_0ctdu")
 text = "Left"
 horizontal_alignment = 1
 
@@ -64,6 +70,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer2/VBoxContainer2" unique_id=1144411094]
 layout_mode = 2
+theme = SubResource("Theme_0ctdu")
 text = "Right"
 horizontal_alignment = 1
 
