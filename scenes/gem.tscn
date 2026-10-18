@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://e4xt6ietkd6" path="res://scenes/gem.gd" id="1_mpwtx"]
 [ext_resource type="Texture2D" uid="uid://hek26ao6x0mh" path="res://Assets/Escenario/Elementos/shine.png" id="2_bhq7q"]
 [ext_resource type="Texture2D" uid="uid://3tqq7dmhxs6t" path="res://Assets/Escenario/Elementos/gema.png" id="2_mpwtx"]
+[ext_resource type="PackedScene" uid="uid://bbq2b43o07siv" path="res://scenes/destroy_particles_2d.tscn" id="3_rj4j3"]
 
 [sub_resource type="Curve" id="Curve_nv4qe"]
 _data = [Vector2(0, 1), 0.0, -1.5367883, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -104,17 +105,9 @@ preprocess = 2.0
 randomness = 1.0
 process_material = SubResource("ParticleProcessMaterial_kpgvn")
 
-[node name="DestroyParticles2D" type="GPUParticles2D" parent="." unique_id=318482897]
+[node name="DestroyParticles2D" parent="." unique_id=2031956355 instance=ExtResource("3_rj4j3")]
 unique_name_in_owner = true
-emitting = false
-amount = 18
-texture = ExtResource("2_bhq7q")
-lifetime = 1.2
-one_shot = true
-explosiveness = 1.0
-randomness = 1.0
-visibility_rect = Rect2(-1000, -1000, 2000, 2000)
-process_material = SubResource("ParticleProcessMaterial_kpgvn")
+visibility_rect = Rect2(-2000, -2000, 4000, 4000)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=172014522]
 unique_name_in_owner = true
