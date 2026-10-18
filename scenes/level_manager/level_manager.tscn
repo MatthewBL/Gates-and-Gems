@@ -14,12 +14,14 @@
 [ext_resource type="PackedScene" uid="uid://bybqn33h0qsm6" path="res://scenes/levels/level_4.tscn" id="5_cc64i"]
 [ext_resource type="PackedScene" uid="uid://bw43bdndcrhdx" path="res://scenes/levels/level_7.tscn" id="8_j5hfo"]
 [ext_resource type="AudioStream" uid="uid://chlijg0ncq82b" path="res://audio/prepare_your_swords.mp3" id="11_7xgxe"]
+[ext_resource type="PackedScene" uid="uid://skpt5veynsep" path="res://scenes/end_screen.tscn" id="15_6ws0v"]
 
-[node name="LevelManager" type="Node2D" unique_id=1405935450 node_paths=PackedStringArray("player", "fade_in_out")]
+[node name="LevelManager" type="Node2D" unique_id=1405935450 node_paths=PackedStringArray("player", "fade_in_out", "end_screen")]
 script = ExtResource("1_1hfdo")
 levels = Array[PackedScene]([ExtResource("2_ikvo2"), ExtResource("3_edw4w"), ExtResource("4_fly33"), ExtResource("5_cc64i"), ExtResource("2_k3jl4"), ExtResource("2_a8du7"), ExtResource("8_j5hfo"), ExtResource("2_21gto"), ExtResource("2_7xgxe")])
 player = NodePath("CharacterBody2D")
 fade_in_out = NodePath("FadeInOut")
+end_screen = NodePath("EndScreentemp")
 
 [node name="CharacterBody2D" parent="." unique_id=879361713 instance=ExtResource("2_s5yp0")]
 position = Vector2(275, 261)
@@ -32,9 +34,12 @@ process_mode = 3
 visible = false
 
 [node name="FadeInOut" parent="." unique_id=1018078760 instance=ExtResource("3_oxi2h")]
+layer = 100
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=17347778]
 process_mode = 3
 stream = ExtResource("11_7xgxe")
 autoplay = true
+[node name="EndScreentemp" parent="." unique_id=620154270 instance=ExtResource("15_6ws0v")]
+visible = false
 bus = &"Music"
