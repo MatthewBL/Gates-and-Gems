@@ -10,9 +10,14 @@ var input_enabled = false
 var time_elapsed = 0
 var end = false
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+@onready var keyboard_texture_rect: TextureRect = %KeyboardTextureRect
+@onready var gamepad_texture_rect: TextureRect = %GamepadTextureRect
+
+
+func _input(event: InputEvent) -> void:
+	var show_gamepad: bool = event is InputEventJoypadButton or event is InputEventJoypadMotion
+	keyboard_texture_rect.visible = not show_gamepad
+	gamepad_texture_rect.visible = show_gamepad
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
