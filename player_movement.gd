@@ -105,7 +105,10 @@ func _on_quicksand_detect_body_exited(_body: Node2D) -> void:
 
 
 func on_interaction_entered(area: Area2D) -> void:
-	if area is Door and not (area as Door).is_opened and (not is_on_floor() or onQuickSand):
+	if area is Door and not (area as Door).is_opened:
+		return
+	
+	if (not is_on_floor() or onQuickSand):
 		return
 	
 	how_to_press_e.show()
