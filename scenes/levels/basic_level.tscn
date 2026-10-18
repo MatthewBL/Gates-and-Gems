@@ -132,6 +132,7 @@ unique_name_in_owner = true
 stream = ExtResource("5_7fkf7")
 
 [node name="Quicksand" type="TileMapLayer" parent="." unique_id=1107114903]
+modulate = Color(1, 1, 1, 0.8039216)
 z_index = 10
 tile_set = SubResource("TileSet_s6nli")
 
