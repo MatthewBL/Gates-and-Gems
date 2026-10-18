@@ -5,6 +5,7 @@ extends Node2D
 @export var levels: Array[PackedScene]
 @export var player: PlayerMovement
 @export var fade_in_out: FadeInOut
+@export var end_screen: CanvasLayer
 
 
 var current_level_index: int = 0
@@ -83,12 +84,14 @@ func on_next_level() -> void:
 	player.allow_movement = false
 	fade_in_out.fadeOut()
 	await get_tree().create_timer(1).timeout
-	for level: Node in level_container.get_children():
-		level.queue_free()
-	load_level.call_deferred(current_level_index + 1)
-	await get_tree().create_timer(0.1).timeout
+	if current_level_index + 1 < levels.size():
+		for level: Node in level_container.get_children():
+			level.queue_free()
+		load_level.call_deferred(current_level_index + 1)
+		await get_tree().create_timer(0.1).timeout
+		player.allow_movement = true
+	end_screen.show()
 	fade_in_out.fadeIn()
-	player.allow_movement = true
 
 func shake_camera() -> void:
 	player.shakeCamera()
