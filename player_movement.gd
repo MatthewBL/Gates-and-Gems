@@ -18,11 +18,19 @@ var wait_anim: bool = false
 
 @onready var interaction_detect: Area2D = %InteractionDetect
 @onready var sillouette_sprite_2d: AnimatedSprite2D = %SillouetteSprite2D
+@onready var keyboard_texture_rect: TextureRect = %KeyboardTextureRect
+@onready var gamepad_texture_rect: TextureRect = %GamepadTextureRect
 
 
 @export var how_to_press_e: CanvasLayer
 @export var animated_sprite: AnimatedSprite2D
 @export var camera: ShakeCamera
+
+
+func _input(event: InputEvent) -> void:
+	var show_gamepad: bool = event is InputEventJoypadButton or event is InputEventJoypadMotion
+	keyboard_texture_rect.visible = not show_gamepad
+	gamepad_texture_rect.visible = show_gamepad
 
 
 func _unhandled_input(_event: InputEvent) -> void:
