@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://yekyyfp0n866" path="res://Assets/Personaje/Jump_end.png" id="4_ur7pv"]
 [ext_resource type="Texture2D" uid="uid://5lqyo02eni5j" path="res://Assets/Personaje/Jump_start.png" id="5_y4r1p"]
 [ext_resource type="Texture2D" uid="uid://cbp2u64eerc60" path="res://Assets/Personaje/walk.png" id="6_d2wvv"]
+[ext_resource type="Shader" uid="uid://tm6vb5dx1ejt" path="res://silhouette_shader.gdshader" id="7_ur7pv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3v2ag"]
 atlas = ExtResource("2_smehm")
@@ -114,6 +115,10 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_smehm"]
+shader = ExtResource("7_ur7pv")
+shader_parameter/silhouette_color = Color(0, 0, 0, 0.5)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twkdg"]
 size = Vector2(13, 14)
 
@@ -172,6 +177,15 @@ animation = &"jump_end"
 frame = 1
 frame_progress = 1.0
 
+[node name="SillouetteSprite2D" type="AnimatedSprite2D" parent="AnimatedSprite2D" unique_id=850895739]
+unique_name_in_owner = true
+z_index = 11
+material = SubResource("ShaderMaterial_smehm")
+sprite_frames = SubResource("SpriteFrames_s6nli")
+animation = &"jump_end"
+frame = 1
+frame_progress = 1.0
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1747155850]
 shape = SubResource("RectangleShape2D_twkdg")
 
@@ -213,5 +227,7 @@ stretch_mode = 2
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]
+[connection signal="animation_finished" from="AnimatedSprite2D/SillouetteSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="animation_looped" from="AnimatedSprite2D/SillouetteSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]
 [connection signal="body_entered" from="QuicksandDetect" to="." method="_on_quicksand_detect_body_entered"]
 [connection signal="body_exited" from="QuicksandDetect" to="." method="_on_quicksand_detect_body_exited"]
