@@ -63,19 +63,16 @@ func free_gem(target_gem: Gem) -> void:
 	var gems = get_tree().get_nodes_in_group("Gem")
 	var id = target_gem.id
 	for gem in gems:
-		if gem.id == id:
-			
-			gem.queue_free()
+		if gem.id == id and gem != target_gem:
+			gem.destroy()
+	var color: Color = target_gem.modulate
+	await target_gem.destroy()
+	for level: Node in level_container.get_children():
+		level.add_door_gem(color)
+
 
 
 func on_next_level() -> void:
-	player.allow_movement = false
-	player.velocity.x = 0
-	fade_in_out.fadeOut()
-	await get_tree().create_timer(1).timeout
 	for level: Node in level_container.get_children():
 		level.queue_free()
 	load_level.call_deferred(current_level_index + 1)
-	await get_tree().create_timer(0.1).timeout
-	fade_in_out.fadeIn()
-	player.allow_movement = true

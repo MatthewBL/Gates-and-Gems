@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://djeqe0yp5pkst"]
+
+[ext_resource type="Texture2D" uid="uid://bs6cdl03dhbwx" path="res://Assets/Escenario/Elementos/gema hueco.png" id="1_64vkw"]
+[ext_resource type="Script" uid="uid://w0p81m38ttmc" path="res://scenes/door_gem.gd" id="2_fniwu"]
+
+[node name="DoorGem" type="Sprite2D" unique_id=991967074]
+texture = ExtResource("1_64vkw")
+region_enabled = true
+region_rect = Rect2(0, 0, 6, 8)
+script = ExtResource("2_fniwu")
+
+[node name="Gem" type="Sprite2D" parent="." unique_id=1751800314]
+unique_name_in_owner = true
+visible = false
+texture = ExtResource("1_64vkw")
+region_enabled = true
+region_rect = Rect2(9, 1, 4, 6)
