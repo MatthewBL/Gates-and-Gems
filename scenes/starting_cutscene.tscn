@@ -2,12 +2,16 @@
 
 [ext_resource type="Script" uid="uid://b6bi366yom6i5" path="res://scenes/starting_cutscene.gd" id="1_u2gcp"]
 [ext_resource type="Texture2D" uid="uid://dgusor4oc1b26" path="res://Assets/UI/space_key.png" id="2_e6xmt"]
+[ext_resource type="PackedScene" uid="uid://dueeokby43ix5" path="res://scenes/level_manager/level_manager.tscn" id="2_oktqt"]
 [ext_resource type="Texture2D" uid="uid://chpvmf574l47t" path="res://Assets/UI/enter_key.png" id="3_iuwd2"]
+[ext_resource type="FontFile" uid="uid://bvh5ptwgqdhyh" path="res://Assets/UI/VT323-Regular.ttf" id="4_atiew"]
+[ext_resource type="PackedScene" uid="uid://dgwfxno32tioc" path="res://scenes/fade_in_out.tscn" id="5_517xa"]
 
 [sub_resource type="Theme" id="Theme_s6nli"]
+default_font = ExtResource("4_atiew")
 default_font_size = 25
 
-[node name="StartingCutscene" type="Control" unique_id=1465507625 node_paths=PackedStringArray("text_label")]
+[node name="StartingCutscene" type="Control" unique_id=1465507625 node_paths=PackedStringArray("text_label", "fade_in_out")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -16,7 +20,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_u2gcp")
 text_label = NodePath("PanelContainer/Label")
-text_lines = Array[String](["1...", "2...", "3...", "Hello world!", "End of the message."])
+text_lines = Array[String](["Welcome to my castle!", "I would like you to find your way around.", "Using my magic I have made this place very special!", "So...", "...", "Please find your way out?", "Thank you!"])
+fade_in_out = NodePath("FadeInOut")
+level_manager = ExtResource("2_oktqt")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1388454507]
 layout_mode = 1
@@ -64,3 +70,5 @@ theme = SubResource("Theme_s6nli")
 text = "Hello world"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="FadeInOut" parent="." unique_id=1018078760 instance=ExtResource("5_517xa")]

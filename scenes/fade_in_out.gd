@@ -13,6 +13,9 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+func longFadeIn():
+	animation_player.play("long_fade_in")
+
 func fadeIn():
 	animation_player.play("fade_in")
 
