@@ -110,7 +110,7 @@ func _on_quicksand_detect_body_entered(_body: Node2D) -> void:
 
 
 func _on_quicksand_detect_body_exited(_body: Node2D) -> void:
-	velocity.y += JUMP_VELOCITY
+	velocity.y = JUMP_VELOCITY
 	onQuickSand = false;
 	sillouette_sprite_2d.visible = false
 
