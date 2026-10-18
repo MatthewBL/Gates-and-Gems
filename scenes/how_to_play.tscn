@@ -52,8 +52,8 @@ stretch_mode = 2
 
 [node name="GamepadTextureRect" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=2111287906]
 unique_name_in_owner = true
-visible = false
 layout_mode = 2
+size_flags_horizontal = 4
 texture = ExtResource("4_e0xnd")
 stretch_mode = 2
 
