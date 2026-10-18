@@ -7,10 +7,21 @@
 default_font = ExtResource("2_2ckv8")
 default_font_size = 24
 
+[sub_resource type="Theme" id="Theme_4qitg"]
+default_font = ExtResource("2_2ckv8")
+
 [sub_resource type="Theme" id="Theme_0bpdh"]
+default_font = ExtResource("2_2ckv8")
 default_font_size = 24
 
+[sub_resource type="Theme" id="Theme_fn7s4"]
+default_font = ExtResource("2_2ckv8")
+
+[sub_resource type="Theme" id="Theme_ut64b"]
+default_font = ExtResource("2_2ckv8")
+
 [sub_resource type="Theme" id="Theme_2ckv8"]
+default_font = ExtResource("2_2ckv8")
 default_font_size = 24
 
 [node name="Credits" type="Control" unique_id=2051490771 node_paths=PackedStringArray("container")]
@@ -47,6 +58,7 @@ vertical_alignment = 2
 [node name="Label3" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer" unique_id=1058584185]
 layout_mode = 2
 size_flags_vertical = 3
+theme = SubResource("Theme_4qitg")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 text = "2D Artist
 Game Desgin"
@@ -64,6 +76,7 @@ vertical_alignment = 2
 [node name="Label4" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer" unique_id=2005777251]
 layout_mode = 2
 size_flags_vertical = 3
+theme = SubResource("Theme_fn7s4")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 text = "Developer
 Game Desgin"
@@ -85,6 +98,7 @@ vertical_alignment = 2
 [node name="Label4" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer2" unique_id=709396713]
 layout_mode = 2
 size_flags_vertical = 3
+theme = SubResource("Theme_ut64b")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 text = "Developer
 Game Desgin"
