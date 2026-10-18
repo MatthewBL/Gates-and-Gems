@@ -11,6 +11,7 @@ enum DOOR_GEM_TYPE {
 signal gem_collected(gem: Gem)
 signal next_level
 signal open_door_signal
+signal boss_door_opened
 
 
 @export var width: float:
@@ -56,6 +57,8 @@ func update_gem_count(gem: Gem):
 			door_instance.open_door()
 			open_door_sfx.play()
 			open_door_signal.emit()
+			if door_gem_type == DOOR_GEM_TYPE.BOSS:
+				boss_door_opened.emit()
 
 
 func on_player_interacted_door() -> void:
