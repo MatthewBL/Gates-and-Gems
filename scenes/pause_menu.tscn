@@ -1,9 +1,15 @@
 [gd_scene format=3 uid="uid://btdsf8n7usyx0"]
 
 [ext_resource type="Script" uid="uid://d0jiopt3txemr" path="res://scenes/pause_menu.gd" id="1_n87rw"]
+[ext_resource type="FontFile" uid="uid://6mywy6ie3bpt" path="res://Assets/UI/Jacquard12-Regular.ttf" id="2_myx47"]
+[ext_resource type="FontFile" uid="uid://bvh5ptwgqdhyh" path="res://Assets/UI/VT323-Regular.ttf" id="3_kukqi"]
 
 [sub_resource type="Theme" id="Theme_uahpa"]
+default_font = ExtResource("2_myx47")
 default_font_size = 30
+
+[sub_resource type="Theme" id="Theme_kukqi"]
+default_font = ExtResource("3_kukqi")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_myx47"]
 corner_radius_top_left = 8
@@ -25,8 +31,12 @@ corner_radius_top_right = 8
 corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
+[sub_resource type="Theme" id="Theme_5d2l8"]
+default_font = ExtResource("3_kukqi")
+
 [sub_resource type="Theme" id="Theme_s6nli"]
-default_font_size = 8
+default_font = ExtResource("3_kukqi")
+default_font_size = 12
 
 [node name="PauseMenu" type="CanvasLayer" unique_id=567695629 node_paths=PackedStringArray("main_options", "settings_menu")]
 layer = 100
@@ -59,6 +69,7 @@ theme_override_constants/separation = 8
 [node name="Resume" type="Button" parent="PanelContainer/VBoxContainer/Menu" unique_id=1764577104]
 process_mode = 3
 layout_mode = 2
+theme = SubResource("Theme_kukqi")
 theme_override_colors/font_color = Color(0.108224384, 0.10822471, 0.108224474, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_myx47")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_n87rw")
@@ -67,6 +78,7 @@ text = "Resume"
 
 [node name="Settings" type="Button" parent="PanelContainer/VBoxContainer/Menu" unique_id=1865710043]
 layout_mode = 2
+theme = SubResource("Theme_kukqi")
 theme_override_colors/font_color = Color(0.108224384, 0.10822471, 0.108224474, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_myx47")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_n87rw")
@@ -75,6 +87,7 @@ text = "Settings"
 
 [node name="Exit" type="Button" parent="PanelContainer/VBoxContainer/Menu" unique_id=722050105]
 layout_mode = 2
+theme = SubResource("Theme_kukqi")
 theme_override_colors/font_color = Color(0.108224384, 0.10822471, 0.108224474, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_myx47")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_n87rw")
@@ -95,6 +108,7 @@ size_flags_horizontal = 4
 
 [node name="MasterVol" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer/Settings" unique_id=1379385034]
 layout_mode = 2
+theme = SubResource("Theme_5d2l8")
 text = "Master Volume"
 horizontal_alignment = 1
 
@@ -106,6 +120,7 @@ value = 1.0
 
 [node name="Music" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer/Settings" unique_id=839271987]
 layout_mode = 2
+theme = SubResource("Theme_5d2l8")
 text = "Music"
 horizontal_alignment = 1
 
@@ -117,6 +132,7 @@ value = 1.0
 
 [node name="SFX" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer/Settings" unique_id=512469762]
 layout_mode = 2
+theme = SubResource("Theme_5d2l8")
 text = "SFX"
 horizontal_alignment = 1
 
@@ -132,6 +148,7 @@ layout_mode = 2
 [node name="Apply" type="Button" parent="PanelContainer/VBoxContainer/PanelContainer/Settings" unique_id=900227897]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.108224384, 0.10822471, 0.108224474, 1)
+theme_override_fonts/font = ExtResource("3_kukqi")
 theme_override_styles/normal = SubResource("StyleBoxFlat_myx47")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_n87rw")
 theme_override_styles/hover = SubResource("StyleBoxFlat_kukqi")
