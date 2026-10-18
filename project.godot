@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Pedagogos Sindicalistas Lechosos"
+config/name="Gems and Gates"
 run/main_scene="uid://d0vl7v7snhji6"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="uid://dhfhe3qo46gml"
