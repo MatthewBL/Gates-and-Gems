@@ -5,7 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://dptsx6hvoklyb" path="res://Assets/Escenario/Tileset/fondo_tile_brick.png" id="2_m7iyv"]
 [ext_resource type="Texture2D" uid="uid://pix8ydor75f8" path="res://Assets/Escenario/Tileset/Ventanas.png" id="3_1ak8g"]
 [ext_resource type="PackedScene" uid="uid://n6hawyn447py" path="res://scenes/door.tscn" id="3_r68ba"]
+[ext_resource type="Texture2D" uid="uid://d0l4topjbq86u" path="res://Assets/Escenario/Decorado/barril.png" id="4_aperb"]
 [ext_resource type="AudioStream" uid="uid://c4aicdnxey23i" path="res://audio/collect_gem.ogg" id="4_kuyue"]
+[ext_resource type="Texture2D" uid="uid://dr821wc0u5a76" path="res://Assets/Escenario/Tileset/torch.png" id="5_4tl2j"]
 [ext_resource type="AudioStream" uid="uid://c21egugb2hj4b" path="res://audio/open_door.ogg" id="5_7fkf7"]
 [ext_resource type="Texture2D" uid="uid://ct4aky7yqetm6" path="res://Assets/Escenario/Elementos/arenas movedizas.png" id="6_cv06b"]
 
@@ -26,6 +28,27 @@ texture_region_size = Vector2i(32, 32)
 [sub_resource type="TileSet" id="TileSet_twkdg"]
 tile_size = Vector2i(32, 32)
 sources/1 = SubResource("TileSetAtlasSource_aperb")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4tl2j"]
+texture = ExtResource("4_aperb")
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_5g7um"]
+sources/0 = SubResource("TileSetAtlasSource_4tl2j")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5g7um"]
+texture = ExtResource("5_4tl2j")
+texture_region_size = Vector2i(32, 32)
+0:0/animation_columns = 3
+0:0/animation_speed = 5.0
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_7oih0"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_5g7um")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cmhs5"]
 texture = ExtResource("2_cmhs5")
@@ -121,6 +144,12 @@ tile_set = SubResource("TileSet_nsrm0")
 [node name="Background_layer_2" type="TileMapLayer" parent="." unique_id=130520962]
 tile_set = SubResource("TileSet_twkdg")
 
+[node name="Background_layer_3" type="TileMapLayer" parent="." unique_id=1985306701]
+tile_set = SubResource("TileSet_5g7um")
+
+[node name="Background_layer_4" type="TileMapLayer" parent="." unique_id=1854042275]
+tile_set = SubResource("TileSet_7oih0")
+
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1603651314]
 tile_set = SubResource("TileSet_cmhs5")
 
@@ -139,12 +168,10 @@ gizmo_extents = 16.0
 [node name="CollectGemSFX" type="AudioStreamPlayer" parent="." unique_id=145257703]
 unique_name_in_owner = true
 stream = ExtResource("4_kuyue")
-bus = &"SFX"
 
 [node name="OpenDoorSFX" type="AudioStreamPlayer" parent="." unique_id=1945544230]
 unique_name_in_owner = true
 stream = ExtResource("5_7fkf7")
-bus = &"SFX"
 
 [node name="Quicksand" type="TileMapLayer" parent="." unique_id=1107114903]
 modulate = Color(1, 1, 1, 0.8039216)
