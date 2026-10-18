@@ -37,8 +37,9 @@ visible = false
 layer = 100
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=17347778]
+process_mode = 3
 stream = ExtResource("11_7xgxe")
 autoplay = true
-
 [node name="EndScreentemp" parent="." unique_id=620154270 instance=ExtResource("15_6ws0v")]
 visible = false
+bus = &"Music"

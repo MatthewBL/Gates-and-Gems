@@ -139,10 +139,12 @@ gizmo_extents = 16.0
 [node name="CollectGemSFX" type="AudioStreamPlayer" parent="." unique_id=145257703]
 unique_name_in_owner = true
 stream = ExtResource("4_kuyue")
+bus = &"SFX"
 
 [node name="OpenDoorSFX" type="AudioStreamPlayer" parent="." unique_id=1945544230]
 unique_name_in_owner = true
 stream = ExtResource("5_7fkf7")
+bus = &"SFX"
 
 [node name="Quicksand" type="TileMapLayer" parent="." unique_id=1107114903]
 modulate = Color(1, 1, 1, 0.8039216)
