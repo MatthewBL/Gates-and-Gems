@@ -27,6 +27,8 @@ func load_level(level_index: int) -> void:
 	current_level = levels[current_level_index].instantiate() as Level
 	level_container.add_child(current_level)
 	
+	if not current_level.is_node_ready():
+		await current_level.ready
 	await get_tree().physics_frame
 	
 	player.global_position = current_level.player_spawnpoint.global_position
