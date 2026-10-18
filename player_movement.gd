@@ -20,6 +20,7 @@ var wait_anim: bool = false
 
 @export var how_to_press_e: CanvasLayer
 @export var animated_sprite: AnimatedSprite2D
+@export var camera: ShakeCamera
 
 
 func _unhandled_input(_event: InputEvent) -> void:
@@ -124,3 +125,6 @@ func _on_animated_sprite_2d_animation_looped() -> void:
 
 func _on_animated_sprite_2d_animation_finished() -> void:
 	wait_anim = false
+
+func shakeCamera() -> void:
+	camera.shake()
