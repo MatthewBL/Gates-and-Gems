@@ -23,6 +23,7 @@ signal open_door_signal
 
 
 var gem_count: int
+var max_gem_count: int
 var door_gem_index: int = 0
 
 @onready var gem_container: Node2D = %GemContainer
@@ -42,6 +43,7 @@ func _ready() -> void:
 		if child is Gem:
 			child.on_collected.connect(update_gem_count)
 			gem_count += 1
+	max_gem_count = gem_count
 
 
 func update_gem_count(gem: Gem):
@@ -67,4 +69,9 @@ func add_door_gem(color: Color) -> void:
 		(door_gems_container.get_child(door_gem_index) as DoorGem).set_gem_color(color)
 		door_gem_index += 1
 	else:
-		(door_gems_container.get_child(0) as BossDoorGem).set_gem_color(color)
+		var alpha = 0
+		if gem_count == 0:
+			alpha = 1
+		else:
+			alpha = 0.75 - (gem_count as float / max_gem_count as float) * 0.75
+		(door_gems_container.get_child(0) as BossDoorGem).set_gem_color(color, alpha)
