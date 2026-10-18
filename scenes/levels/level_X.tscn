@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://djaygxf3c4otm"]
+[gd_scene format=4 uid="uid://djaygxf3c4otm"]
 
 [ext_resource type="PackedScene" uid="uid://bpm4d2n1s1e0q" path="res://scenes/levels/basic_level.tscn" id="1_ntash"]
 [ext_resource type="Texture2D" uid="uid://gy4034jwkts" path="res://Assets/Escenario/Decorado/OLA_inmensa.png" id="2_4qitg"]
@@ -15,8 +15,11 @@ door_gem_type = 1
 position = Vector2(408, 143)
 texture = ExtResource("2_4qitg")
 
-[node name="TileMapLayer" parent="." index="2" unique_id=1603651314]
-tile_map_data = PackedByteArray(0, 0, 25, 0, 25, 0, 1, 0, 4, 0, 4, 0, 0, 0, 23, 0, 25, 0, 1, 0, 3, 0, 4, 0, 0, 0, 24, 0, 25, 0, 1, 0, 4, 0, 4, 0, 0, 0, 26, 0, 25, 0, 1, 0, 4, 0, 4, 0, 0, 0, 27, 0, 25, 0, 1, 0, 5, 0, 4, 0, 0, 0)
+[node name="Background_layer_2" parent="." index="2" unique_id=130520962]
+tile_map_data = PackedByteArray("AAAUAAYAAQAAAAAAAAAFAAYAAQAAAAAAAAAKAAkAAQAAAAAAAAAPAAkAAQAAAAAAAAAIAA8AAQAAAAAAAAARAA8AAQAAAAAAAAAKABIAAQAAAAAAAAAPABIAAQAAAAAAAAA=")
+
+[node name="TileMapLayer" parent="." index="3" unique_id=1603651314]
+tile_map_data = PackedByteArray("AAAZABkAAQAEAAQAAAAXABkAAQADAAQAAAAYABkAAQAEAAQAAAAaABkAAQAEAAQAAAAbABkAAQAFAAQAAAA=")
 
 [node name="Gem" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="0" unique_id=82949541 instance=ExtResource("2_nxmki")]
 modulate = Color(4.416, 1.79, 2.172, 1)
@@ -346,14 +349,14 @@ position = Vector2(365, 237)
 modulate = Color(4.416, 1.79, 2.172, 1)
 position = Vector2(373, 253)
 
-[node name="Door" parent="." index="4" unique_id=1757254397]
+[node name="Door" parent="." index="5" unique_id=1757254397]
 position = Vector2(382, 400)
 
-[node name="PlayerSpawnpoint" parent="." index="5" unique_id=1240467275]
+[node name="PlayerSpawnpoint" parent="." index="6" unique_id=1240467275]
 position = Vector2(408, 383)
-
-[node name="BossDoorGem" parent="DoorGemsContainer" parent_id_path=PackedInt32Array(918858841) index="0" unique_id=630195229 instance=ExtResource("3_a2yct")]
-position = Vector2(408, 313)
 
 [node name="Credits" parent="." index="10" unique_id=2051490771 node_paths=PackedStringArray("level") instance=ExtResource("4_6uxwg")]
 level = NodePath("..")
+
+[node name="BossDoorGem" parent="DoorGemsContainer" parent_id_path=PackedInt32Array(918858841) index="0" unique_id=630195229 instance=ExtResource("3_a2yct")]
+position = Vector2(408, 313)
