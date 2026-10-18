@@ -19,9 +19,12 @@ text_label = NodePath("PanelContainer/Label")
 text_lines = Array[String](["1...", "2...", "3...", "Hello world!", "End of the message."])
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1388454507]
-layout_mode = 0
-offset_right = 640.0
-offset_bottom = 360.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(0.012617188, 0.012617188, 0.012617188, 1)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1097961441]

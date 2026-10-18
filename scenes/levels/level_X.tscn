@@ -22,167 +22,167 @@ tile_map_data = PackedByteArray("AAAUAAYAAQAAAAAAAAAFAAYAAQAAAAAAAAAKAAkAAQAAAAA
 tile_map_data = PackedByteArray("AAAZABkAAQAEAAQAAAAXABkAAQADAAQAAAAYABkAAQAEAAQAAAAaABkAAQAEAAQAAAAbABkAAQAFAAQAAAA=")
 
 [node name="Gem2" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="0" unique_id=728598036 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(335, 354)
 
 [node name="Gem3" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="1" unique_id=917439828 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(311, 346)
 
 [node name="Gem5" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="2" unique_id=635956525 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(272, 370)
 
 [node name="Gem7" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="3" unique_id=1603624712 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(239, 411)
 
 [node name="Gem9" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="4" unique_id=744853433 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(215, 458)
 
 [node name="Gem11" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="5" unique_id=1926286145 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(191, 514)
 
 [node name="Gem13" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="6" unique_id=2135979365 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(175, 578)
 
 [node name="Gem15" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="7" unique_id=1359831345 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(159, 642)
 
 [node name="Gem17" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="8" unique_id=1065277988 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(143, 706)
 
 [node name="Gem19" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="9" unique_id=286628862 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(136, 771)
 
 [node name="Gem22" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="10" unique_id=1886984584 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(98, 48)
 
 [node name="Gem24" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="11" unique_id=784785060 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(82, 111)
 
 [node name="Gem26" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="12" unique_id=265572432 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(66, 175)
 
 [node name="Gem28" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="13" unique_id=65366782 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(50, 240)
 
 [node name="Gem30" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="14" unique_id=1993433727 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(39, 304)
 
 [node name="Gem32" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="15" unique_id=1408764251 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(31, 367)
 
 [node name="Gem34" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="16" unique_id=1293943536 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(24, 431)
 
 [node name="Gem36" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="17" unique_id=716129015 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(19, 495)
 
 [node name="Gem47" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="18" unique_id=387539341 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(458, 377)
 
 [node name="Gem49" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="19" unique_id=1257797798 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(490, 345)
 
 [node name="Gem51" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="20" unique_id=1888320137 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(514, 377)
 
 [node name="Gem53" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="21" unique_id=2029943190 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(529, 413)
 
 [node name="Gem55" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="22" unique_id=1163004380 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(545, 458)
 
 [node name="Gem57" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="23" unique_id=402250509 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(560, 495)
 
 [node name="Gem59" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="24" unique_id=1217095553 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(576, 529)
 
 [node name="Gem114" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="25" unique_id=1470381708 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(594, 444)
 
 [node name="Gem116" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="26" unique_id=164124669 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(610, 476)
 
 [node name="Gem118" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="27" unique_id=626521385 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(626, 516)
 
 [node name="Gem120" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="28" unique_id=530570379 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(642, 548)
 
 [node name="Gem122" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="29" unique_id=1404684844 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(658, 580)
 
 [node name="Gem124" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="30" unique_id=525655753 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(674, 620)
 
 [node name="Gem126" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="31" unique_id=1465842424 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(690, 668)
 
 [node name="Gem128" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="32" unique_id=702957651 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(706, 716)
 
 [node name="Gem130" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="33" unique_id=773485193 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(722, 764)
 
 [node name="Gem158" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="34" unique_id=1628527289 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(631, 53)
 
 [node name="Gem160" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="35" unique_id=1349808993 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(663, 85)
 
 [node name="Gem162" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="36" unique_id=1330114776 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(695, 117)
 
 [node name="Gem164" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="37" unique_id=620153003 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(711, 149)
 
 [node name="Gem168" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="38" unique_id=1277023735 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(744, 197)
 
 [node name="Gem169" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="39" unique_id=1713830284 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(728, 173)
 
 [node name="Gem171" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="40" unique_id=1890750733 instance=ExtResource("2_nxmki")]
-modulate = Color(1.353, 0.93888855, 0.96395916, 1)
+modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(760, 229)
 
 [node name="Door" parent="." index="5" unique_id=1757254397]
