@@ -42,6 +42,11 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 		interaction_detect.monitoring = false
+		if animated_sprite.animation == "jump_start":
+			wait_anim = true
+		if not wait_anim:
+			animated_sprite.play("air")
+
 
 	# Max quicksand velocity
 	if onQuickSand:
@@ -63,11 +68,10 @@ func _physics_process(delta: float) -> void:
 		var direction := Input.get_axis("ui_left", "ui_right")
 		if direction:
 			if is_on_floor():
-				if animated_sprite.animation == "jump_start":
+				if animated_sprite.animation == "jump_start" or animated_sprite.animation == "air":
 					animated_sprite.play("jump_end")
 					sillouette_sprite_2d.play("jump_end")
 					wait_anim = true
-					print("wait anim")
 				if not wait_anim:
 					animated_sprite.play("walk")
 					sillouette_sprite_2d.play("walk")
@@ -80,7 +84,7 @@ func _physics_process(delta: float) -> void:
 			velocity.x = direction * SPEED
 		else:
 			if is_on_floor():
-				if animated_sprite.animation == "jump_start":
+				if animated_sprite.animation == "jump_start" or animated_sprite.animation == "air":
 					animated_sprite.play("jump_end")
 					sillouette_sprite_2d.play("jump_end")
 					wait_anim = true
@@ -110,7 +114,7 @@ func _on_quicksand_detect_body_entered(_body: Node2D) -> void:
 
 
 func _on_quicksand_detect_body_exited(_body: Node2D) -> void:
-	velocity.y += JUMP_VELOCITY
+	velocity.y = JUMP_VELOCITY
 	onQuickSand = false;
 	sillouette_sprite_2d.visible = false
 
