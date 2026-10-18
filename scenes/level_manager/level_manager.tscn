@@ -34,5 +34,7 @@ visible = false
 [node name="FadeInOut" parent="." unique_id=1018078760 instance=ExtResource("3_oxi2h")]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=17347778]
+process_mode = 3
 stream = ExtResource("11_7xgxe")
 autoplay = true
+bus = &"Music"

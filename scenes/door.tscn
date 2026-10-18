@@ -37,3 +37,4 @@ texture = ExtResource("3_83dcw")
 stream = ExtResource("2_la1wf")
 volume_db = 1.0
 pitch_scale = 1.5
+bus = &"SFX"
