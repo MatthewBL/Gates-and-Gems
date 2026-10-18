@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://skpt5veynsep"]
 
+[ext_resource type="Script" uid="uid://b4p8smwye00sf" path="res://scenes/end_screen.gd" id="1_87vmq"]
 [ext_resource type="Texture2D" uid="uid://b4aqq7mpnxxuc" path="res://Assets/Title/Ttitle_ref.png" id="1_sq7gg"]
 [ext_resource type="FontFile" uid="uid://6mywy6ie3bpt" path="res://Assets/UI/Jacquard12-Regular.ttf" id="2_jvip1"]
 [ext_resource type="FontFile" uid="uid://bvh5ptwgqdhyh" path="res://Assets/UI/VT323-Regular.ttf" id="3_jc7ji"]
@@ -17,6 +18,7 @@ corner_radius_bottom_left = 4
 
 [node name="EndScreentemp" type="CanvasLayer" unique_id=620154270]
 layer = 20
+script = ExtResource("1_87vmq")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=363903928]
 anchors_preset = 15
@@ -47,6 +49,7 @@ horizontal_alignment = 1
 vertical_alignment = 2
 
 [node name="Button" type="Button" parent="." unique_id=110208340]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(50, 0)
 offset_left = 560.0
 offset_top = 320.0
