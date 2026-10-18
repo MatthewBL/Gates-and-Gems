@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bwqk7xq4i3v0h"]
 
 [ext_resource type="Texture2D" uid="uid://dgusor4oc1b26" path="res://Assets/UI/space_key.png" id="1_30apa"]
+[ext_resource type="Script" uid="uid://b8vdmv2dn8shj" path="res://scenes/how_to_play.gd" id="1_wi5qh"]
 [ext_resource type="FontFile" uid="uid://bvh5ptwgqdhyh" path="res://Assets/UI/VT323-Regular.ttf" id="1_xkrkv"]
 [ext_resource type="Texture2D" uid="uid://dt13xbol1bqto" path="res://Assets/UI/a.png" id="2_xkrkv"]
 [ext_resource type="Texture2D" uid="uid://cba5v60a5trjp" path="res://Assets/UI/d.png" id="3_wi5qh"]
@@ -15,6 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_wi5qh")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=789547759]
 
@@ -39,7 +41,16 @@ theme = SubResource("Theme_0ctdu")
 text = "Jump"
 horizontal_alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=1205230322]
+[node name="KeyboardTextureRect" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=1205230322]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("1_30apa")
+stretch_mode = 2
+
+[node name="GamepadTextureRect" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=2111287906]
+unique_name_in_owner = true
+visible = false
+modulate = Color(0.20152658, 0.20152658, 0.20152658, 1)
 layout_mode = 2
 texture = ExtResource("1_30apa")
 stretch_mode = 2
@@ -59,7 +70,17 @@ theme = SubResource("Theme_0ctdu")
 text = "Left"
 horizontal_alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer2/VBoxContainer" unique_id=1536066283]
+[node name="KeyboardTextureRect2" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer2/VBoxContainer" unique_id=1536066283]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_xkrkv")
+stretch_mode = 2
+
+[node name="GamepadTextureRect2" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer2/VBoxContainer" unique_id=155528053]
+unique_name_in_owner = true
+visible = false
+modulate = Color(0.20152658, 0.20152658, 0.20152658, 1)
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("2_xkrkv")
@@ -74,7 +95,17 @@ theme = SubResource("Theme_0ctdu")
 text = "Right"
 horizontal_alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer2/VBoxContainer2" unique_id=1845063072]
+[node name="KeyboardTextureRect3" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer2/VBoxContainer2" unique_id=1845063072]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("3_wi5qh")
+stretch_mode = 2
+
+[node name="GamepadTextureRect3" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer2/VBoxContainer2" unique_id=2004208618]
+unique_name_in_owner = true
+visible = false
+modulate = Color(0.20152658, 0.20152658, 0.20152658, 1)
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("3_wi5qh")

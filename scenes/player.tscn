@@ -218,7 +218,18 @@ shape = SubResource("RectangleShape2D_kpgvn")
 [node name="HowToPressE" type="CanvasLayer" parent="." unique_id=608996900]
 visible = false
 
-[node name="TextureRect" type="TextureRect" parent="HowToPressE" unique_id=831653868]
+[node name="KeyboardTextureRect" type="TextureRect" parent="HowToPressE" unique_id=831653868]
+unique_name_in_owner = true
+offset_left = 317.0
+offset_top = 148.0
+offset_right = 333.0
+offset_bottom = 164.0
+texture = ExtResource("4_dqkch")
+stretch_mode = 2
+
+[node name="GamepadTextureRect" type="TextureRect" parent="HowToPressE" unique_id=588776782]
+unique_name_in_owner = true
+modulate = Color(0.18359044, 0.18359044, 0.18359044, 1)
 offset_left = 317.0
 offset_top = 148.0
 offset_right = 333.0
