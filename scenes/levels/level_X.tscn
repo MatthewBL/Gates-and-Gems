@@ -12,14 +12,17 @@ height = 50.0
 door_gem_type = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="." index="1" unique_id=1077359482]
-position = Vector2(408, 143)
+position = Vector2(402, 143)
 texture = ExtResource("2_4qitg")
 
 [node name="Background_layer_2" parent="." index="2" unique_id=130520962]
 tile_map_data = PackedByteArray("AAAUAAYAAQAAAAAAAAAFAAYAAQAAAAAAAAAKAAkAAQAAAAAAAAAPAAkAAQAAAAAAAAAIAA8AAQAAAAAAAAARAA8AAQAAAAAAAAAKABIAAQAAAAAAAAAPABIAAQAAAAAAAAA=")
 
-[node name="TileMapLayer" parent="." index="3" unique_id=1603651314]
-tile_map_data = PackedByteArray("AAAZABkAAQAEAAQAAAAXABkAAQADAAQAAAAYABkAAQAEAAQAAAAaABkAAQAEAAQAAAAbABkAAQAFAAQAAAA=")
+[node name="Background_layer_4" parent="." index="4" unique_id=1854042275]
+tile_map_data = PackedByteArray("AAATAAUAAAAAAAAAAAATAAMAAAAAAAAAAAATAAEAAAAAAAAAAAAFAAEAAAAAAAAAAAAFAAMAAAAAAAAAAAAFAAUAAAAAAAAAAAALAAoAAAAAAAAAAAAOAAoAAAAAAAAAAAA=")
+
+[node name="TileMapLayer" parent="." index="5" unique_id=1603651314]
+tile_map_data = PackedByteArray("AAAZABkAAQAEAAQAAAAaABkAAQAEAAQAAAAbABkAAQAFAAQAAAAYABkAAQADAAQAAAA=")
 
 [node name="Gem2" parent="GemContainer" parent_id_path=PackedInt32Array(324876167) index="0" unique_id=728598036 instance=ExtResource("2_nxmki")]
 modulate = Color(1.353, 0.939, 0.964, 1)
@@ -185,14 +188,17 @@ position = Vector2(728, 173)
 modulate = Color(1.353, 0.939, 0.964, 1)
 position = Vector2(760, 229)
 
-[node name="Door" parent="." index="5" unique_id=1757254397]
-position = Vector2(382, 400)
+[node name="Door" parent="." index="7" unique_id=1757254397]
+position = Vector2(390, 400)
 
-[node name="PlayerSpawnpoint" parent="." index="6" unique_id=1240467275]
-position = Vector2(408, 383)
+[node name="PlayerSpawnpoint" parent="." index="8" unique_id=1240467275]
+position = Vector2(416, 383)
 
 [node name="Credits" parent="." index="10" unique_id=2051490771 node_paths=PackedStringArray("level") instance=ExtResource("4_6uxwg")]
 level = NodePath("..")
 
-[node name="BossDoorGem" parent="DoorGemsContainer" parent_id_path=PackedInt32Array(918858841) index="0" unique_id=630195229 instance=ExtResource("3_a2yct")]
+[node name="DoorGemsContainer" parent="." index="13" unique_id=918858841]
+position = Vector2(8, 0)
+
+[node name="BossDoorGem" parent="DoorGemsContainer" index="0" unique_id=630195229 instance=ExtResource("3_a2yct")]
 position = Vector2(408, 313)
