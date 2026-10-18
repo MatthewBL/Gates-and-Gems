@@ -5,6 +5,9 @@
 [ext_resource type="FontFile" uid="uid://bvh5ptwgqdhyh" path="res://Assets/UI/VT323-Regular.ttf" id="1_xkrkv"]
 [ext_resource type="Texture2D" uid="uid://dt13xbol1bqto" path="res://Assets/UI/a.png" id="2_xkrkv"]
 [ext_resource type="Texture2D" uid="uid://cba5v60a5trjp" path="res://Assets/UI/d.png" id="3_wi5qh"]
+[ext_resource type="Texture2D" uid="uid://2hvyoahhcmsj" path="res://Assets/UI/mando teclas/a-export.png" id="4_e0xnd"]
+[ext_resource type="Texture2D" uid="uid://gx2qvcexqvpb" path="res://Assets/UI/mando teclas/izq.png" id="6_m8x0n"]
+[ext_resource type="Texture2D" uid="uid://dsj64q2ecqff7" path="res://Assets/UI/mando teclas/dchpng.png" id="8_crhno"]
 
 [sub_resource type="Theme" id="Theme_0ctdu"]
 default_font = ExtResource("1_xkrkv")
@@ -50,9 +53,8 @@ stretch_mode = 2
 [node name="GamepadTextureRect" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=2111287906]
 unique_name_in_owner = true
 visible = false
-modulate = Color(0.20152658, 0.20152658, 0.20152658, 1)
 layout_mode = 2
-texture = ExtResource("1_30apa")
+texture = ExtResource("4_e0xnd")
 stretch_mode = 2
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/VBoxContainer" unique_id=335946866]
@@ -80,10 +82,9 @@ stretch_mode = 2
 [node name="GamepadTextureRect2" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer2/VBoxContainer" unique_id=155528053]
 unique_name_in_owner = true
 visible = false
-modulate = Color(0.20152658, 0.20152658, 0.20152658, 1)
 layout_mode = 2
 size_flags_horizontal = 4
-texture = ExtResource("2_xkrkv")
+texture = ExtResource("6_m8x0n")
 stretch_mode = 2
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer2" unique_id=203571701]
@@ -105,8 +106,7 @@ stretch_mode = 2
 [node name="GamepadTextureRect3" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer2/VBoxContainer2" unique_id=2004208618]
 unique_name_in_owner = true
 visible = false
-modulate = Color(0.20152658, 0.20152658, 0.20152658, 1)
 layout_mode = 2
 size_flags_horizontal = 4
-texture = ExtResource("3_wi5qh")
+texture = ExtResource("8_crhno")
 stretch_mode = 2

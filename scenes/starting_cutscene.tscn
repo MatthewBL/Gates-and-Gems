@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dgusor4oc1b26" path="res://Assets/UI/space_key.png" id="2_e6xmt"]
 [ext_resource type="PackedScene" uid="uid://dueeokby43ix5" path="res://scenes/level_manager/level_manager.tscn" id="2_oktqt"]
 [ext_resource type="FontFile" uid="uid://bvh5ptwgqdhyh" path="res://Assets/UI/VT323-Regular.ttf" id="4_atiew"]
+[ext_resource type="Texture2D" uid="uid://2hvyoahhcmsj" path="res://Assets/UI/mando teclas/a-export.png" id="4_oktqt"]
 [ext_resource type="PackedScene" uid="uid://dgwfxno32tioc" path="res://scenes/fade_in_out.tscn" id="5_517xa"]
 
 [sub_resource type="Theme" id="Theme_s6nli"]
@@ -51,10 +52,10 @@ stretch_mode = 2
 
 [node name="GamepadTextureRect" type="TextureRect" parent="HBoxContainer" unique_id=367314278]
 unique_name_in_owner = true
-modulate = Color(0.23031491, 0.23031494, 0.23031494, 1)
+visible = false
 layout_mode = 2
 size_flags_vertical = 4
-texture = ExtResource("2_e6xmt")
+texture = ExtResource("4_oktqt")
 stretch_mode = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1797851431]
