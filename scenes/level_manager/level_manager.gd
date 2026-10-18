@@ -90,7 +90,8 @@ func on_next_level() -> void:
 		load_level.call_deferred(current_level_index + 1)
 		await get_tree().create_timer(0.1).timeout
 		player.allow_movement = true
-	end_screen.show()
+	else:
+		end_screen.show()
 	fade_in_out.fadeIn()
 
 func shake_camera() -> void:
