@@ -27,11 +27,13 @@ func load_level(level_index: int) -> void:
 	current_level = levels[current_level_index].instantiate() as Level
 	level_container.add_child(current_level)
 	
+	await get_tree().physics_frame
+	
 	player.global_position = current_level.player_spawnpoint.global_position
 	current_level.gem_collected.connect(free_gem)
 	current_level.next_level.connect(on_next_level)
 	current_level.open_door_signal.connect(shake_camera)
-	current_level.open_door_signal.connect(flash)
+	current_level.boss_door_opened.connect(flash)
 	
 	var offsets: Array[Vector2] = [
 		Vector2(current_level.width, 0.0), #RIGHT
@@ -68,7 +70,8 @@ func free_gem(target_gem: Gem) -> void:
 		if gem.id == id and gem != target_gem:
 			gem.destroy()
 	var color: Color = target_gem.modulate
-	await target_gem.destroy()
+	target_gem.destroy()
+	await target_gem.collected_completed
 	for level: Node in level_container.get_children():
 		level.add_door_gem(color)
 

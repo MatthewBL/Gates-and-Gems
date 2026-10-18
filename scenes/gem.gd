@@ -3,7 +3,7 @@ extends Area2D
 
 
 signal on_collected(gem: Gem)
-
+signal collected_completed
 
 var id: StringName
 
@@ -29,7 +29,7 @@ func destroy() -> void:
 	tween.parallel()
 	tween.tween_property(idle_particles_2d, "global_scale", Vector2(0.01, 0.01), 0.1) 
 	await tween.finished
+	collected_completed.emit()
 	destroy_particles_2d.modulate = modulate
-	destroy_particles_2d.reparent(get_parent())
 	destroy_particles_2d.emitting = true
 	queue_free()

@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://bbq2b43o07siv"]
+
+[ext_resource type="Texture2D" uid="uid://hek26ao6x0mh" path="res://Assets/Escenario/Elementos/shine.png" id="1_f2sot"]
+[ext_resource type="Script" uid="uid://cohcw4d3fmwam" path="res://scenes/destroy_particles_2d.gd" id="2_5tmhq"]
+
+[sub_resource type="Curve" id="Curve_nv4qe"]
+_data = [Vector2(0, 1), 0.0, -1.5367883, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_7gj2l"]
+curve = SubResource("Curve_nv4qe")
+
+[sub_resource type="Curve" id="Curve_rj4j3"]
+_limits = [0.0, 3.0, 0.0, 1.0]
+_data = [Vector2(0, 3), 0.0, 0.0, 0, 0, Vector2(1, 3), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_bhq7q"]
+curve = SubResource("Curve_rj4j3")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kpgvn"]
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 7.0
+initial_velocity_max = 15.0
+gravity = Vector3(0, 0, 0)
+alpha_curve = SubResource("CurveTexture_7gj2l")
+emission_curve = SubResource("CurveTexture_bhq7q")
+
+[node name="DestroyParticles2D" type="GPUParticles2D" unique_id=2031956355]
+emitting = false
+amount = 18
+texture = ExtResource("1_f2sot")
+lifetime = 1.2
+one_shot = true
+explosiveness = 1.0
+randomness = 1.0
+visibility_rect = Rect2(-1000, -1000, 2000, 2000)
+local_coords = true
+process_material = SubResource("ParticleProcessMaterial_kpgvn")
+script = ExtResource("2_5tmhq")
