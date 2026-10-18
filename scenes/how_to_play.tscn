@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://bwqk7xq4i3v0h"]
 
-[ext_resource type="Texture2D" uid="uid://dgusor4oc1b26" path="res://Assets/UI/space_key.png" id="1_30apa"]
 [ext_resource type="Script" uid="uid://b8vdmv2dn8shj" path="res://scenes/how_to_play.gd" id="1_wi5qh"]
 [ext_resource type="FontFile" uid="uid://bvh5ptwgqdhyh" path="res://Assets/UI/VT323-Regular.ttf" id="1_xkrkv"]
-[ext_resource type="Texture2D" uid="uid://dt13xbol1bqto" path="res://Assets/UI/a.png" id="2_xkrkv"]
-[ext_resource type="Texture2D" uid="uid://cba5v60a5trjp" path="res://Assets/UI/d.png" id="3_wi5qh"]
+[ext_resource type="Texture2D" uid="uid://d1h8r4ia2popk" path="res://Assets/UI/teclas nuevas/space_newt.png" id="3_crhno"]
 [ext_resource type="Texture2D" uid="uid://2hvyoahhcmsj" path="res://Assets/UI/mando teclas/a-export.png" id="4_e0xnd"]
+[ext_resource type="Texture2D" uid="uid://ckc8pquylxibr" path="res://Assets/UI/teclas nuevas/ANew.png" id="5_xqkvd"]
 [ext_resource type="Texture2D" uid="uid://gx2qvcexqvpb" path="res://Assets/UI/mando teclas/izq.png" id="6_m8x0n"]
+[ext_resource type="Texture2D" uid="uid://dv37cymg5unu2" path="res://Assets/UI/teclas nuevas/DNew.png" id="7_dhu30"]
 [ext_resource type="Texture2D" uid="uid://dsj64q2ecqff7" path="res://Assets/UI/mando teclas/dchpng.png" id="8_crhno"]
 
 [sub_resource type="Theme" id="Theme_0ctdu"]
@@ -47,7 +47,7 @@ horizontal_alignment = 1
 [node name="KeyboardTextureRect" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=1205230322]
 unique_name_in_owner = true
 layout_mode = 2
-texture = ExtResource("1_30apa")
+texture = ExtResource("3_crhno")
 stretch_mode = 2
 
 [node name="GamepadTextureRect" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=2111287906]
@@ -76,7 +76,7 @@ horizontal_alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
-texture = ExtResource("2_xkrkv")
+texture = ExtResource("5_xqkvd")
 stretch_mode = 2
 
 [node name="GamepadTextureRect2" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer2/VBoxContainer" unique_id=155528053]
@@ -100,7 +100,7 @@ horizontal_alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
-texture = ExtResource("3_wi5qh")
+texture = ExtResource("7_dhu30")
 stretch_mode = 2
 
 [node name="GamepadTextureRect3" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer2/VBoxContainer2" unique_id=2004208618]
