@@ -31,6 +31,7 @@ func load_level(level_index: int) -> void:
 	current_level.gem_collected.connect(free_gem)
 	current_level.next_level.connect(on_next_level)
 	current_level.open_door_signal.connect(shake_camera)
+	current_level.open_door_signal.connect(flash)
 	
 	var offsets: Array[Vector2] = [
 		Vector2(current_level.width, 0.0), #RIGHT
@@ -86,3 +87,6 @@ func on_next_level() -> void:
 
 func shake_camera() -> void:
 	player.shakeCamera()
+
+func flash() -> void:
+	fade_in_out.flash()

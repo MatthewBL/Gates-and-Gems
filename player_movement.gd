@@ -25,7 +25,7 @@ var wait_anim: bool = false
 
 func _unhandled_input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed(&"interact"):
-		if interaction_node != null and interaction_node.has_method(&"interact"):
+		if interaction_node != null and interaction_node.has_method(&"interact") and allow_movement:
 			interaction_node.interact()
 
 

@@ -18,3 +18,6 @@ func fadeIn():
 
 func fadeOut():
 	animation_player.play("fade_out")
+
+func flash():
+	animation_player.play("flash")
