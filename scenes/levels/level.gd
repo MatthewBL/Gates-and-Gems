@@ -2,6 +2,12 @@ class_name Level
 extends Node2D
 
 
+enum DOOR_GEM_TYPE {
+	NORMAL,
+	BOSS
+}
+
+
 signal gem_collected(gem: Gem)
 signal next_level
 
@@ -12,6 +18,7 @@ signal next_level
 @export var height: float:
 	get:
 		return height * 16 + 16
+@export var door_gem_type: DOOR_GEM_TYPE = DOOR_GEM_TYPE.NORMAL
 
 
 var gem_count: int
@@ -54,5 +61,8 @@ func on_player_interacted_door() -> void:
 
 
 func add_door_gem(color: Color) -> void:
-	(door_gems_container.get_child(door_gem_index) as DoorGem).set_gem_color(color)
-	door_gem_index += 1
+	if door_gem_type == DOOR_GEM_TYPE.NORMAL:
+		(door_gems_container.get_child(door_gem_index) as DoorGem).set_gem_color(color)
+		door_gem_index += 1
+	else:
+		(door_gems_container.get_child(0) as BossDoorGem).set_gem_color(color)

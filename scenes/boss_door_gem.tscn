@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cpsoi4orj38q5"]
+
+[ext_resource type="Texture2D" uid="uid://dt8fvji2sddnb" path="res://Assets/Escenario/Elementos/Gema_boss.png" id="1_0m5fx"]
+[ext_resource type="Script" uid="uid://cbhx73a7hsbit" path="res://scenes/boss_door_gem.gd" id="2_5bitf"]
+
+[node name="BossDoorGem" type="Sprite2D" unique_id=630195229]
+texture = ExtResource("1_0m5fx")
+region_enabled = true
+region_rect = Rect2(0, 0, 46, 51)
+script = ExtResource("2_5bitf")
+
+[node name="Gem" type="Sprite2D" parent="." unique_id=1192246329]
+unique_name_in_owner = true
+visible = false
+position = Vector2(0, -2)
+texture = ExtResource("1_0m5fx")
+region_enabled = true
+region_rect = Rect2(47, 4, 16, 33)

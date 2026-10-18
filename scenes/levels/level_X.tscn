@@ -2,10 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://bpm4d2n1s1e0q" path="res://scenes/levels/basic_level.tscn" id="1_ntash"]
 [ext_resource type="PackedScene" uid="uid://brfp15carawpf" path="res://scenes/gem.tscn" id="2_nxmki"]
+[ext_resource type="PackedScene" uid="uid://cpsoi4orj38q5" path="res://scenes/boss_door_gem.tscn" id="3_a2yct"]
 
 [node name="LevelX" unique_id=510901832 instance=ExtResource("1_ntash")]
 width = 50.0
 height = 50.0
+door_gem_type = 1
 
 [node name="Background" parent="." index="0" unique_id=825716554]
 visible = false
@@ -346,3 +348,6 @@ position = Vector2(382, 400)
 
 [node name="PlayerSpawnpoint" parent="." index="4" unique_id=1240467275]
 position = Vector2(408, 383)
+
+[node name="BossDoorGem" parent="DoorGemsContainer" parent_id_path=PackedInt32Array(918858841) index="0" unique_id=630195229 instance=ExtResource("3_a2yct")]
+position = Vector2(408, 313)

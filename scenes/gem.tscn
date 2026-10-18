@@ -113,6 +113,7 @@ lifetime = 1.2
 one_shot = true
 explosiveness = 1.0
 randomness = 1.0
+visibility_rect = Rect2(-1000, -1000, 2000, 2000)
 process_material = SubResource("ParticleProcessMaterial_kpgvn")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=172014522]

@@ -67,7 +67,8 @@ func free_gem(target_gem: Gem) -> void:
 			gem.destroy()
 	var color: Color = target_gem.modulate
 	await target_gem.destroy()
-	current_level.add_door_gem(color)
+	for level: Node in level_container.get_children():
+		level.add_door_gem(color)
 
 
 
