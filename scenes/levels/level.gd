@@ -12,6 +12,7 @@ signal gem_collected(gem: Gem)
 signal next_level
 signal open_door_signal
 signal boss_door_opened
+signal update_credits(alpha: float)
 
 
 @export var width: float:
@@ -78,3 +79,4 @@ func add_door_gem(color: Color) -> void:
 		else:
 			alpha = 0.75 - (gem_count as float / max_gem_count as float) * 0.75
 		(door_gems_container.get_child(0) as BossDoorGem).set_gem_color(color, alpha)
+		update_credits.emit(alpha)

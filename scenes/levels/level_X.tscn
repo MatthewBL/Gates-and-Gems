@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bpm4d2n1s1e0q" path="res://scenes/levels/basic_level.tscn" id="1_ntash"]
 [ext_resource type="PackedScene" uid="uid://brfp15carawpf" path="res://scenes/gem.tscn" id="2_nxmki"]
 [ext_resource type="PackedScene" uid="uid://cpsoi4orj38q5" path="res://scenes/boss_door_gem.tscn" id="3_a2yct"]
+[ext_resource type="PackedScene" uid="uid://hjq3ji0nnmrs" path="res://scenes/credits.tscn" id="4_6uxwg"]
 
 [node name="LevelX" unique_id=510901832 instance=ExtResource("1_ntash")]
 width = 50.0
@@ -351,3 +352,6 @@ position = Vector2(408, 383)
 
 [node name="BossDoorGem" parent="DoorGemsContainer" parent_id_path=PackedInt32Array(918858841) index="0" unique_id=630195229 instance=ExtResource("3_a2yct")]
 position = Vector2(408, 313)
+
+[node name="Credits" parent="." index="9" unique_id=2051490771 node_paths=PackedStringArray("level") instance=ExtResource("4_6uxwg")]
+level = NodePath("..")

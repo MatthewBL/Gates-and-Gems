@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://hjq3ji0nnmrs"]
+
+[ext_resource type="Script" uid="uid://sxhf0kktrtr7" path="res://scenes/credits.gd" id="1_0bpdh"]
+
+[sub_resource type="Theme" id="Theme_yeqti"]
+default_font_size = 24
+
+[sub_resource type="Theme" id="Theme_0bpdh"]
+default_font_size = 24
+
+[sub_resource type="Theme" id="Theme_2ckv8"]
+default_font_size = 24
+
+[node name="Credits" type="Control" unique_id=2051490771 node_paths=PackedStringArray("container")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0bpdh")
+container = NodePath("CanvasLayer/HBoxContainer")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1083293690]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=784788411]
+modulate = Color(1, 1, 1, 0)
+offset_right = 640.0
+offset_bottom = 360.0
+theme_override_constants/separation = 100
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer" unique_id=728984378]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer" unique_id=1649199996]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_yeqti")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "PabloJM"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Label3" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer" unique_id=1058584185]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "2D Artist
+Game Desgin"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer" unique_id=1709728508]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_0bpdh")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "CakuDev"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Label4" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer" unique_id=2005777251]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "Developer
+Game Desgin"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/HBoxContainer" unique_id=442934986]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label3" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer2" unique_id=171096868]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_yeqti")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "Matthew"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Label4" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer2" unique_id=709396713]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "Developer
+Game Desgin"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer2" unique_id=1811099224]
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_2ckv8")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "Thank you for playing!!"
+horizontal_alignment = 1
+vertical_alignment = 1
