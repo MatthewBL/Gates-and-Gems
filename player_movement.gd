@@ -22,7 +22,7 @@ var wait_anim: bool = false
 @onready var gamepad_texture_rect: TextureRect = %GamepadTextureRect
 
 
-@export var how_to_press_e: CanvasLayer
+@export var how_to_press_e: Control
 @export var animated_sprite: AnimatedSprite2D
 @export var camera: ShakeCamera
 

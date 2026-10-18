@@ -216,24 +216,28 @@ collision_mask = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionDetect" unique_id=185873357]
 shape = SubResource("RectangleShape2D_kpgvn")
 
-[node name="HowToPressE" type="CanvasLayer" parent="." unique_id=608996900]
+[node name="HowToPressE" type="Control" parent="." unique_id=628831798]
 visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = -8.0
+offset_top = -29.0
+offset_right = -8.0
+offset_bottom = -29.0
 
 [node name="KeyboardTextureRect" type="TextureRect" parent="HowToPressE" unique_id=831653868]
 unique_name_in_owner = true
-offset_left = 317.0
-offset_top = 148.0
-offset_right = 333.0
-offset_bottom = 164.0
+layout_mode = 0
+offset_right = 16.0
+offset_bottom = 16.0
 texture = ExtResource("4_dqkch")
 stretch_mode = 2
 
 [node name="GamepadTextureRect" type="TextureRect" parent="HowToPressE" unique_id=588776782]
 unique_name_in_owner = true
-offset_left = 317.0
-offset_top = 148.0
-offset_right = 333.0
-offset_bottom = 164.0
+layout_mode = 0
+offset_right = 16.0
+offset_bottom = 16.0
 texture = ExtResource("10_y4r1p")
 stretch_mode = 2
 
