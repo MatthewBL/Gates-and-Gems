@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://hek26ao6x0mh" path="res://Assets/Escenario/Elementos/shine.png" id="2_bhq7q"]
 [ext_resource type="Texture2D" uid="uid://3tqq7dmhxs6t" path="res://Assets/Escenario/Elementos/gema.png" id="2_mpwtx"]
 [ext_resource type="PackedScene" uid="uid://bbq2b43o07siv" path="res://scenes/destroy_particles_2d.tscn" id="3_rj4j3"]
+[ext_resource type="Texture2D" uid="uid://wlelux4l206h" path="res://img/2d_lights_and_shadows_neutral_point_light.png" id="5_dn3vp"]
 
 [sub_resource type="Curve" id="Curve_nv4qe"]
 _data = [Vector2(0, 1), 0.0, -1.5367883, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -121,5 +122,10 @@ shape = SubResource("RectangleShape2D_twkdg")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=595911978]
 libraries/ = SubResource("AnimationLibrary_rj4j3")
 autoplay = &"idle"
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=845101433]
+unique_name_in_owner = true
+texture = ExtResource("5_dn3vp")
+texture_scale = 0.2
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
