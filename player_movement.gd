@@ -106,11 +106,13 @@ func _physics_process(delta: float) -> void:
 
 func _on_quicksand_detect_body_entered(_body: Node2D) -> void:
 	onQuickSand = true;
+	sillouette_sprite_2d.visible = true
 
 
 func _on_quicksand_detect_body_exited(_body: Node2D) -> void:
 	velocity.y += JUMP_VELOCITY
 	onQuickSand = false;
+	sillouette_sprite_2d.visible = false
 
 
 func on_interaction_entered(area: Area2D) -> void:

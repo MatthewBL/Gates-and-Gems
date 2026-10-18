@@ -10,10 +10,12 @@ var id: StringName
 @onready var destroy_particles_2d: GPUParticles2D = %DestroyParticles2D
 @onready var idle_particles_2d: GPUParticles2D = %IdleParticles2D
 @onready var sprite_2d: Sprite2D = %Sprite2D
+@onready var point_light_2d: PointLight2D = %PointLight2D
 
 
 func _ready() -> void:
 	id = name
+	point_light_2d.color = modulate
 
 
 func _on_body_entered(body: Node2D) -> void:

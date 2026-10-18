@@ -179,6 +179,7 @@ frame_progress = 1.0
 
 [node name="SillouetteSprite2D" type="AnimatedSprite2D" parent="AnimatedSprite2D" unique_id=850895739]
 unique_name_in_owner = true
+visible = false
 z_index = 11
 material = SubResource("ShaderMaterial_smehm")
 sprite_frames = SubResource("SpriteFrames_s6nli")
