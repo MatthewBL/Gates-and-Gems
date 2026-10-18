@@ -21,6 +21,7 @@ func pause():
 	self.show()
 
 func unpause():
+	_on_apply_pressed()
 	get_tree().paused = false;
 	self.hide()
 
