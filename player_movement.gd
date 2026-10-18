@@ -17,6 +17,8 @@ var wait_anim: bool = false
 
 
 @onready var interaction_detect: Area2D = %InteractionDetect
+@onready var sillouette_sprite_2d: AnimatedSprite2D = %SillouetteSprite2D
+
 
 @export var how_to_press_e: CanvasLayer
 @export var animated_sprite: AnimatedSprite2D
@@ -63,29 +65,36 @@ func _physics_process(delta: float) -> void:
 			if is_on_floor():
 				if animated_sprite.animation == "jump_start":
 					animated_sprite.play("jump_end")
+					sillouette_sprite_2d.play("jump_end")
 					wait_anim = true
 					print("wait anim")
 				if not wait_anim:
 					animated_sprite.play("walk")
+					sillouette_sprite_2d.play("walk")
 			if direction > 0:
 				animated_sprite.flip_h = false
+				sillouette_sprite_2d.flip_h = false
 			elif direction < 0:
 				animated_sprite.flip_h = true
+				sillouette_sprite_2d.flip_h = true
 			velocity.x = direction * SPEED
 		else:
 			if is_on_floor():
 				if animated_sprite.animation == "jump_start":
 					animated_sprite.play("jump_end")
+					sillouette_sprite_2d.play("jump_end")
 					wait_anim = true
 					print("wait anim")
 				if not wait_anim:
 					animated_sprite.play("idle")
+					sillouette_sprite_2d.play("idle")
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 
 		
 		# Handle jump.
 		if Input.is_action_just_pressed("ui_accept") and (is_on_floor() or onQuickSand):
 			animated_sprite.play("jump_start")
+			sillouette_sprite_2d.play("jump_start")
 			velocity.y += JUMP_VELOCITY
 
 	if (onQuickSand):
